@@ -33,7 +33,7 @@ function gogogo(x){
           }
         });
         s.forEach(function(item){
-          html += '<li><a href="#">'+item+'</a></li>';
+          html += '<li><a href="#">'+item+'</a> <a href="#" data-id="'+item+'">X</a></li>';
         });
         document.querySelector('#suggest').innerHTML = html;
 
@@ -59,8 +59,18 @@ function init(){
 
   document.querySelector('#suggest').addEventListener('click', function(e){
     e.preventDefault();
+    var x = e.target.getAttribute('data-id');
     if(e.target.tagName === 'LI' || e.target.tagName === 'A'){
+      if(!!x){ // delete
+        domains.splice(domains.indexOf(x),1);
+        var dd = JSON.parse(localStorage.domains);
+        dd.splice(dd.indexOf(x),1);
+        localStorage.domains = JSON.stringify(dd);
+        e.target.parentNode.remove();
+        return;
+      }
       document.querySelector('#domain').value = e.target.textContent;
+      document.querySelector('#suggest').innerHTML = '';
       gogogo({keyCode:13});
     }
   });  
@@ -104,8 +114,8 @@ var domains = [
     input#domain {width:80%;} 
     input#result {width:80%;color:skyblue;}
     ul, li {margin:0;padding:0;}
-    li {margin:10px 0;}
-    li a {font-size:30px;color:#fff;}
+    li {margin:3px 0;}
+    li a {font-size:12px;color:#fff;}
     h2{color:#fff;margin:0;font-size:32px;margin-bottom:20px;}
     h3 {position:absolute;bottom:5px;right:5px;color:#666;}
     input[readonly]{opacity:.7;}
@@ -128,7 +138,7 @@ var domains = [
     <li><a href="#">HELLO</a></li>
     -->
   </ul>
-  
+
   <p><input type="text" id="result" readonly="readonly" onclick="this.select();" onblur="clearAll();" /></p>
 
 
