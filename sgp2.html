@@ -11,7 +11,7 @@ function gogogo(x){
   var master = document.querySelector('#master').value;
   var domain = document.querySelector('#domain').value;
   if((x.keyCode==13 || x.keyCode==9) && master != ''){
-   document.querySelector('#result').value = gp2_generate_passwd(master + ':' + gp2_process_uri(domain,false), 11) + '!';
+   document.querySelector('#result').value = gp2_generate_passwd(master + ':' + gp2_process_uri(domain,false), parseInt(document.querySelector('#len').value) ) + '!';
 
    if(domains.indexOf(domain) < 0){
     var ld = JSON.parse(localStorage.domains);
@@ -127,6 +127,7 @@ var domains = [
   <h2>SuperGenPass!</h2>
   <h3>11!</h3>
   <input type="password" id="master" value="" placeholder="master" />
+  <select id="len"><option>10</option><option selected>11</option></select>
     <br />
   <input type="url" id="domain" placeholder="example.com" onkeydown="gogogo(event);" />
 
