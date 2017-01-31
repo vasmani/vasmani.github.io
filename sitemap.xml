@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://vasmani.github.io/post/blog-again-blog/</loc>
+    <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/post/</loc>
+    <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/</loc>
+    <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/%EA%B8%B0%EB%A1%9D/</loc>
+    <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
+    <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/categories/%EC%9D%BC%EC%83%81/</loc>
+    <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
