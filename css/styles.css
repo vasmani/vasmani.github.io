@@ -289,4 +289,6 @@ article.li.sm>header {
   color: #263238;
 }
 
-
+.article-body img {
+  max-width: 600px;
+}
