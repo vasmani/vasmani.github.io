@@ -6,8 +6,69 @@
     <description>Recent content on Vasmani&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 31 Jan 2017 16:08:27 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 01 Feb 2017 17:29:14 +0900</lastBuildDate>
     <atom:link href="https://vasmani.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>미세먼지 표시 &amp; 어항 피딩 머신</title>
+      <link>https://vasmani.github.io/post/2017-02-01-dust-indicator/</link>
+      <pubDate>Wed, 01 Feb 2017 17:29:14 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/post/2017-02-01-dust-indicator/</guid>
+      <description>
+
+&lt;p&gt;미세먼지 표시기 및 물주기 머신&lt;/p&gt;
+
+&lt;h2 id=&#34;구상&#34;&gt;구상&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;기존 만들었던 &lt;a href=&#34;https://www.flickr.com/photos/98699716@N08/albums/72157653523812651&#34;&gt;구피 자동 피딩 장치&lt;/a&gt;(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다.&lt;/li&gt;
+&lt;li&gt;실시간 미세먼지 수치는 &lt;a href=&#34;http://m.airkorea.or.kr/&#34;&gt;airkorea&lt;/a&gt;에서 크롤링하여 보여 준다.&lt;/li&gt;
+&lt;li&gt;미세먼지 수치 크롤링은 아두이노에서 할 수 없으므로, 집 NAS로 사용하고 있는 Cubietruck에서 하고, 다른 곳에서 읽어갈 수 있게 해 놓았다.&lt;/li&gt;
+&lt;li&gt;이미 mpd 서버로 사용하고 있는 Raspberry Pi에서 cronjob을 통해 피딩 모터를 돌리라는 신호를 rf 315Mhz로 보내고 있으므로 이 머신에서 수치를 읽어 같은 방식으로 rf transmitter로 보낸다. 이를 아두이노에서는 읽어서 1602 디스플레이에 표시한다.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vasmani/blog/wiki/RGB-LED&#34;&gt;RGB LED&lt;/a&gt;를 달아 수치에 따라 색깔이 변하는 램프를 달아 둔다.&lt;/li&gt;
+&lt;li&gt;기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 딱인 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다. 모터 쉴드도 &lt;a href=&#34;https://github.com/vasmani/blog/wiki/L293D&#34;&gt;L293D&lt;/a&gt; IC로 대체한다.&lt;/li&gt;
+&lt;li&gt;미세먼지 수치는 15분마다 갱신된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;기존&#34;&gt;기존&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Arduino Uno&lt;/li&gt;
+&lt;li&gt;DFRobot Motorshield&lt;/li&gt;
+&lt;li&gt;1602 I2C Display&lt;/li&gt;
+&lt;li&gt;RF 315Mhz Receiver&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;—&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32543033931/&#34; title=&#34;DSC05891.JPG&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/477/32543033931_7868b3a061_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05891.JPG&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32512186912/in/photostream/&#34; title=&#34;DSC05889.JPG&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/544/32512186912_1af829356f_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05889.JPG&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;신규&#34;&gt;신규&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Arduino Pro Mini&lt;/li&gt;
+&lt;li&gt;L293D&lt;/li&gt;
+&lt;li&gt;RGB Led&lt;/li&gt;
+&lt;li&gt;RF 315Mhz Receiver&lt;/li&gt;
+&lt;li&gt;케이스는 효린이 장난감 껍데기&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31852998653/in/photostream/&#34; title=&#34;DSC05892.JPG&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/735/31852998653_8a10e99714_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05892.JPG&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32665324865/in/photostream/&#34; title=&#34;DSC05893.JPG&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/328/32665324865_05afa6b1ba_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05893.JPG&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31822375744/in/photostream/&#34; title=&#34;DSC05894.JPG&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/355/31822375744_9828a1b83c_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05894.JPG&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32512214472/in/photostream/&#34; title=&#34;DSC05897.JPG&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/269/32512214472_57c8464a04_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05897.JPG&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31853020493/in/photostream/&#34; title=&#34;DSC05900.JPG&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/451/31853020493_f04d955819_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05900.JPG&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;fritzing&#34;&gt;Fritzing&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>블로그를 다시 시작하다.</title>

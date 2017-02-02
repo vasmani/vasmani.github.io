@@ -2,8 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vasmani.github.io/post/2017-02-01-dust-indicator/</loc>
+    <lastmod>2017-02-01T17:29:14+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasmani.github.io/post/2017-01-31-blog-again-blog/</loc>
     <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/arduino/</loc>
+    <lastmod>2017-02-01T17:29:14+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -12,8 +23,20 @@
   </url>
   
   <url>
+    <loc>https://vasmani.github.io/tags/liquidcrystal/</loc>
+    <lastmod>2017-02-01T17:29:14+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://vasmani.github.io/post/</loc>
-    <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <lastmod>2017-02-01T17:29:14+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/rgb-led/</loc>
+    <lastmod>2017-02-01T17:29:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -24,13 +47,19 @@
   
   <url>
     <loc>https://vasmani.github.io/</loc>
-    <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <lastmod>2017-02-01T17:29:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://vasmani.github.io/tags/%EA%B8%B0%EB%A1%9D/</loc>
     <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/categories/%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1/</loc>
+    <lastmod>2017-02-01T17:29:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
