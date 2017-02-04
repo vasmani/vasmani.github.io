@@ -31,6 +31,10 @@
 &lt;li&gt;미세먼지 수치는 15분마다 갱신된다.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h2 id=&#34;소스&#34;&gt;소스&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://bitbucket.org/ezhong/arduino/src/8b50a3ed4f428b10ef078e2680e3e596ee58b06d/fish-feed-motorshield/fish-feed-motorshield.ino?at=master&amp;amp;fileviewer=file-view-default&#34;&gt;bitbucket&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;기존&#34;&gt;기존&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -67,6 +71,15 @@
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31853020493/in/photostream/&#34; title=&#34;DSC05900.JPG&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/451/31853020493_f04d955819_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05900.JPG&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;fritzing&#34;&gt;Fritzing&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://vasmani.github.io/images/feeding_dust_display_bb.png&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 </description>
     </item>
     
