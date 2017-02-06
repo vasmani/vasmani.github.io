@@ -6,8 +6,151 @@
     <description>Recent content on Vasmani&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 01 Feb 2017 17:29:14 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 06 Feb 2017 11:01:38 +0900</lastBuildDate>
     <atom:link href="https://vasmani.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PC통신의 추억 - 곰주인 호스트 - 이야기5.3</title>
+      <link>https://vasmani.github.io/post/2017-02-06-nostalgia-9600bps/</link>
+      <pubDate>Mon, 06 Feb 2017 11:01:38 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/post/2017-02-06-nostalgia-9600bps/</guid>
+      <description>&lt;p&gt;옛날 옛적 20년도 넘은 그 오래 전! 그때의 PC통신의 추억으로 빠져 보다!
+효린이용 PC만들어 주기 프로젝트중, &lt;a href=&#34;http://www.dosbox.com/&#34;&gt;dosbox&lt;/a&gt;에 재미있는 기능들이 있어서 한 번 해 보았다.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/fL7yuVpPjXA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h2 id=&#34;server&#34;&gt;Server&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi Model B&lt;/li&gt;
+&lt;li&gt;Raspian&lt;/li&gt;
+&lt;li&gt;Dosbox&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;[sdl]
+fullscreen=true
+fulldouble=false
+fullresolution=original
+windowresolution=original
+output=surface
+autolock=true
+sensitivity=100
+waitonerror=true
+priority=highest,normal
+mapperfile=mapper-0.74.map
+usescancodes=false
+
+[dosbox]
+language=
+machine=svga_s3
+captures=capture
+memsize=16
+
+[render]
+frameskip=2
+aspect=false
+scaler=none
+
+[cpu]
+core=auto
+cputype=386
+cycles=3000
+cycleup=10
+cycledown=10
+
+[mixer]
+nosound=false
+rate=8000
+blocksize=2048
+prebuffer=240
+
+[midi]
+mpu401=none
+mididevice=default
+midiconfig=
+
+[sblaster]
+sbtype=sb1
+sbbase=220
+irq=7
+dma=1
+hdma=5
+sbmixer=true
+oplmode=auto
+oplemu=default
+oplrate=22050
+
+[gus]
+gus=false
+gusrate=44100
+gusbase=240
+gusirq=5
+gusdma=3
+ultradir=C:\ULTRASND
+
+[speaker]
+pcspeaker=true
+pcrate=22050
+tandy=auto
+tandyrate=44100
+disney=true
+
+[joystick]
+joysticktype=none
+timed=true
+autofire=false
+swap34=false
+buttonwrap=false
+
+[modem]
+modem=true
+comport=1
+listenport=23
+
+[serial]
+serial1=modem listenport:5000
+serial2=dummy
+serial3=disabled
+serial4=disabled
+
+[dos]
+xms=true
+ems=true
+umb=true
+keyboardlayout=auto
+
+[ipx]
+ipx=false
+
+[autoexec]
+@echo off
+set path=c:\mdir
+mount c /home/pi/dos
+c:
+m.exe
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;client&#34;&gt;Client&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OSX&lt;/li&gt;
+&lt;li&gt;Dosbox&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;[serial]
+serial1=modem
+serial2=dummy
+serial3=disabled
+serial4=disabled
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     
     <item>
       <title>미세먼지 표시 &amp; 어항 피딩 머신</title>
