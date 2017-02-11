@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+
+<link rel="canonical" href="https://vasmani.github.io/post/2017-02-07-raspberrypi-desktop/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>효린이용 첫 PC 마련 - Vasmani&#39;s Blog</title>
+    
+<meta name="description" content="컴퓨터에 관심을 보이는 딸 효린이가 한글을 터득하게 되면서, 키보드로 글쓰는 것에 호기심을 가지게 된 것 같다. 컴퓨터도 잘 활용하면 좋을 것 같아서 간단히 Raspberry Pi로 데스크탑을 만들어 주기로 했다.구상  되도록이면 MS-DOS 환경으로 한다. 인터넷 연결도 없고, 자극적인 것도 없다. 인터넷은 위험해! 한메타자교사로 키보드 사용을 익히고, hwp로 문서를 작성해 보고, 이야기로 아빠랑 채팅도 해 볼 수 있다! 라즈베리파이는 마침 라즈베리파이1 Model B가 하나 놀고 있다. 화면은 클 필요가 없다.">
+
+<meta property="og:title" content="효린이용 첫 PC 마련 - Vasmani&#39;s Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://vasmani.github.io/post/2017-02-07-raspberrypi-desktop/">
+<meta property="og:image" content="https://vasmani.github.io/images/default.png">
+<meta property="og:site_name" content="Vasmani&#39;s Blog">
+<meta property="og:description" content="컴퓨터에 관심을 보이는 딸 효린이가 한글을 터득하게 되면서, 키보드로 글쓰는 것에 호기심을 가지게 된 것 같다. 컴퓨터도 잘 활용하면 좋을 것 같아서 간단히 Raspberry Pi로 데스크탑을 만들어 주기로 했다.구상  되도록이면 MS-DOS 환경으로 한다. 인터넷 연결도 없고, 자극적인 것도 없다. 인터넷은 위험해! 한메타자교사로 키보드 사용을 익히고, hwp로 문서를 작성해 보고, 이야기로 아빠랑 채팅도 해 볼 수 있다! 라즈베리파이는 마침 라즈베리파이1 Model B가 하나 놀고 있다. 화면은 클 필요가 없다.">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="Vasmani&#39;s Blog">
+<meta name="twitter:url" content="https://vasmani.github.io/post/2017-02-07-raspberrypi-desktop/">
+<meta name="twitter:title" content="효린이용 첫 PC 마련 - Vasmani&#39;s Blog">
+<meta name="twitter:description" content="컴퓨터에 관심을 보이는 딸 효린이가 한글을 터득하게 되면서, 키보드로 글쓰는 것에 호기심을 가지게 된 것 같다. 컴퓨터도 잘 활용하면 좋을 것 같아서 간단히 Raspberry Pi로 데스크탑을 만들어 주기로 했다.구상  되도록이면 MS-DOS 환경으로 한다. 인터넷 연결도 없고, 자극적인 것도 없다. 인터넷은 위험해! 한메타자교사로 키보드 사용을 익히고, hwp로 문서를 작성해 보고, 이야기로 아빠랑 채팅도 해 볼 수 있다! 라즈베리파이는 마침 라즈베리파이1 Model B가 하나 놀고 있다. 화면은 클 필요가 없다.">
+<meta name="twitter:image" content="https://vasmani.github.io/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"https:\/\/vasmani.github.io\/"
+    },
+    "headline": "효린이용 첫 PC 마련 - Vasmani\x27s Blog",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https:\/\/vasmani.github.io\/images\/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2017-02-07T09:59:32JST",
+    "dateModified": "2017-02-07T09:59:32JST",
+    "author": {
+      "@type": "Person",
+      "name": "Vasmani\x27s Blog"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vasmani\x27s Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/vasmani.github.io\/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "컴퓨터에 관심을 보이는 딸 효린이가 한글을 터득하게 되면서, 키보드로 글쓰는 것에 호기심을 가지게 된 것 같다. 컴퓨터도 잘 활용하면 좋을 것 같아서 간단히 Raspberry Pi로 데스크탑을 만들어 주기로 했다.\n구상  되도록이면 MS-DOS 환경으로 한다. 인터넷 연결도 없고, 자극적인 것도 없다. 인터넷은 위험해! 한메타자교사로 키보드 사용을 익히고, hwp로 문서를 작성해 보고, 이야기로 아빠랑 채팅도 해 볼 수 있다! 라즈베리파이는 마침 라즈베리파이1 Model B가 하나 놀고 있다. 화면은 클 필요가 없다."
+  }
+</script>
+
+
+    <link href="https://vasmani.github.io/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1108469-19', 'auto');
+ga('send', 'pageview');
+</script>
+
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://vasmani.github.io/">Vasmani&#39;s Blog</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="https://vasmani.github.io/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://vasmani.github.io/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">효린이용 첫 PC 마련</li>
+      </ol>
+    </nav>
+
+    <article class="single">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2017-02-07T09:59:32JST">Feb 7, 2017</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://vasmani.github.io/post/">post</a></li>
+      
+    </ul>
+
+    <h1 class="title">효린이용 첫 PC 마련</h1>
+  </header>
+
+  
+
+  <div class="article-body">
+
+<h2 id="컴퓨터에-관심을-보이는-딸">컴퓨터에 관심을 보이는 딸</h2>
+
+<p>효린이가 한글을 터득하게 되면서, 키보드로 글쓰는 것에 호기심을 가지게 된 것 같다. 컴퓨터도 잘 활용하면 좋을 것 같아서 간단히 Raspberry Pi로 데스크탑을 만들어 주기로 했다.</p>
+
+<h2 id="구상">구상</h2>
+
+<ul>
+<li>되도록이면 MS-DOS 환경으로 한다. 인터넷 연결도 없고, 자극적인 것도 없다. 인터넷은 위험해!</li>
+<li>한메타자교사로 키보드 사용을 익히고, hwp로 문서를 작성해 보고, 이야기로 아빠랑 채팅도 해 볼 수 있다!</li>
+<li>라즈베리파이는 마침 <a href="https://www.raspberrypi.org/products/model-b/">라즈베리파이1 Model B</a>가 하나 놀고 있다.</li>
+<li>화면은 클 필요가 없다.마침 누가 버린&hellip; <em>15인치 LCD모니터</em> 가 있다.</li>
+<li>마침 <em>블루투스 동글</em> 과 <a href="http://www.apple.com/kr/shop/product/MLA22KH/A/magic-keyboard-%ED%95%9C%EA%B5%AD%EC%96%B4?fnode=56">블루투스 키보드</a> 가 있다. 헛 이 키보드가 본체 가격보다 훨씬 비싸다는&hellip; 근데 MS-DOS에 블루투스 키보드라니 좀 돼지 목에 진주&hellip;. ㅋㅋ</li>
+<li>집안을 뒤져보니 마침 12V와 5V가 동시에 나오는 충분한 용량의 어댑터가 하나 있다. 이게 왠 떡!</li>
+</ul>
+
+<h2 id="만들기">만들기</h2>
+
+<ul>
+<li>Raspberry Pi</li>
+<li><a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian</a></li>
+<li><a href="http://www.dosbox.com/">DOSBox</a></li>
+<li>라즈베리파이 on/off를 위한 스위치를 달자.</li>
+</ul>
+
+<p>모니터의 우하단 뒷쪽에 똑딱 스위치를 만들어 Raspberry Pi를 on/off 할 수 있다.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/31998672423/" title="DSC05978"><img src="https://c1.staticflickr.com/3/2320/31998672423_7ab6482256_z.jpg" width="640" height="426" alt="DSC05978"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>12V 전원을 쉽게 넣기 위해 전원선을 뽑았다. 모니터를 뜯어서 전원부에 납땜 했음.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/31998673353/in/photostream/" title="DSC05979"><img src="https://c1.staticflickr.com/3/2356/31998673353_f75a9dca65_z.jpg" width="640" height="426" alt="DSC05979"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>라즈베리파이 케이스는 좀 별로지만, 모니터 뒷쪽에 붙일거라 나쁘지 않다. 배송되어 올때 케이스로 딸려 왔던(왜 이런걸&hellip;) 핫핑크 플라스틱 케이스. 실용적인 케이스였으면 좋았으련만, 어쩔 수 없이 칼질을 해서 커넥터들의 구멍을 만들었다. 그래도 USB장비들과 스토리지인 SD카드를 쉽게 넣고 뺄수 있어서 사용성 면에선 최고다. SD카드만 바꾸면 최신 리눅스 데스크탑으로 변신!</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32689612091/in/photostream/" title="DSC05980"><img src="https://c1.staticflickr.com/3/2487/32689612091_e5ee47b9f7_z.jpg" width="640" height="426" alt="DSC05980"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>뒤에 장착하기. 접착은 강력한 성능의 3M 양면테이프. Raspberry Pi는 HDMI 출력이라 VGA변환기 사용해야 한다. aliexpress에서 약 $3에 구입.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/31998675763/in/photostream/" title="DSC05981"><img src="https://c1.staticflickr.com/3/2411/31998675763_241dffd7c2_z.jpg" width="426" height="640" alt="DSC05981"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>설치 완료.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32706417681/" title="DSC06004"><img src="https://c1.staticflickr.com/1/456/32706417681_1669f24766_c.jpg" width="800" height="535" alt="DSC06004"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>뒷 부분은 좀 예쁘지는 않지만, 보이지 않는 부분이므로 패스. 근데 효린이 장난감 박스 색깔이랑 셋트 같네.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/31987031574/in/photostream/" title="DSC06007"><img src="https://c1.staticflickr.com/3/2755/31987031574_42c1a35eb6_c.jpg" width="535" height="800" alt="DSC06007"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>부팅중&hellip; 이 시간이 좀 짧으면 더 좋을 것 같다.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32706423851/in/photostream/" title="DSC06008"><img src="https://c1.staticflickr.com/3/2721/32706423851_d047cb40fe_c.jpg" width="800" height="535" alt="DSC06008"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>dosbox 자동 구동!</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32829961495/in/photostream/" title="DSC06009"><img src="https://c1.staticflickr.com/1/402/32829961495_8825dd2f0f_c.jpg" width="800" height="535" alt="DSC06009"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>mdir 이라는 호사까지</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32015395253/in/photostream/" title="DSC06010"><img src="https://c1.staticflickr.com/3/2812/32015395253_3fa356c545_c.jpg" width="800" height="535" alt="DSC06010"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>한타 영타 마스터용 한메타자교사</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32015399073/in/photostream/" title="DSC06012"><img src="https://c1.staticflickr.com/1/776/32015399073_62581ca0a1_c.jpg" width="800" height="535" alt="DSC06012"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>전설의 게임 베네치아! 게임성 굿, 학습성 굿!</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32788891676/in/photostream/" title="DSC06013"><img src="https://c1.staticflickr.com/4/3818/32788891676_c544671773_c.jpg" width="800" height="535" alt="DSC06013"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>아래아한글 1.51 - 이것보다 더 낮은 버전은 아무리 뒤져도 못 찾았는다(없나?). 모든 기능을 키보드 단축기로 할 수 있어 겁나 빠르게 문서를 작성할 수 있다. 프린팅도 도전 예정.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32015405623/in/photostream/" title="DSC06014"><img src="https://c1.staticflickr.com/3/2799/32015405623_c68b02f454_c.jpg" width="800" height="535" alt="DSC06014"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>이야기5.3으로 딸이랑 진솔한 채팅 하는 것도 로망중 하나. <code>방가</code> <code>어솨요</code></p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32676520532/in/photostream/" title="DSC06015"><img src="https://c1.staticflickr.com/3/2741/32676520532_5e04d73a9a_c.jpg" width="800" height="535" alt="DSC06015"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<p>별누리 일기장. 이건 써보지는 못 했지만 일기쓰기용으로 아주 좋을 것 같다.</p>
+
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/98699716@N08/32788895606/in/photostream/" title="DSC06016"><img src="https://c1.staticflickr.com/3/2727/32788895606_a6b27a5915_c.jpg" width="800" height="535" alt="DSC06016"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+<h2 id="작동-영상">작동 영상</h2>
+
+<p><code>제작중...</code></p>
+</div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://vasmani.github.io/categories/%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1/">뚝딱뚝딱</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="https://vasmani.github.io/tags/raspberry-pi/">raspberry pi</a></li>
+          
+          <li><a href="https://vasmani.github.io/tags/dosbox/">dosbox</a></li>
+          
+          <li><a href="https://vasmani.github.io/tags/hwp/">hwp</a></li>
+          
+          <li><a href="https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90/">한메타자</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
+
+</article>
+
+
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'vasmani-blog';
+    var disqus_identifier = 'https:\/\/vasmani.github.io\/post\/2017-02-07-raspberrypi-desktop\/';
+    var disqus_title = '효린이용 첫 PC 마련';
+    var disqus_url = 'https:\/\/vasmani.github.io\/post\/2017-02-07-raspberrypi-desktop\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://vasmani.github.io/post/2017-02-07-raspberrypi-desktop/" class="list-group-item">효린이용 첫 PC 마련</a>
+      
+      <a href="https://vasmani.github.io/post/2017-02-06-nostalgia-9600bps/" class="list-group-item">PC통신의 추억 - 곰주인 호스트 - 이야기5.3</a>
+      
+      <a href="https://vasmani.github.io/post/2017-02-01-dust-indicator/" class="list-group-item">미세먼지 표시 &amp; 어항 피딩 머신</a>
+      
+      <a href="https://vasmani.github.io/post/2017-01-31-blog-again-blog/" class="list-group-item">블로그를 다시 시작하다.</a>
+      
+      <a href="https://vasmani.github.io/tags/arduino/" class="list-group-item">Arduino</a>
+      
+      <a href="https://vasmani.github.io/categories/" class="list-group-item">Categories</a>
+      
+      <a href="https://vasmani.github.io/tags/dosbox/" class="list-group-item">Dosbox</a>
+      
+      <a href="https://vasmani.github.io/tags/hwp/" class="list-group-item">Hwp</a>
+      
+      <a href="https://vasmani.github.io/tags/liquidcrystal/" class="list-group-item">Liquidcrystal</a>
+      
+      <a href="https://vasmani.github.io/tags/pc%ED%86%B5%EC%8B%A0/" class="list-group-item">Pc통신</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">CATEGORY</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://vasmani.github.io/categories/%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1" class="list-group-item">뚝딱뚝딱</a>
+      
+      <a href="https://vasmani.github.io/categories/%EC%9D%BC%EC%83%81" class="list-group-item">일상</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://vasmani.github.io/tags/dosbox" class="list-group-item">dosbox</a>
+      
+      <a href="https://vasmani.github.io/tags/raspberry-pi" class="list-group-item">raspberry-pi</a>
+      
+      <a href="https://vasmani.github.io/tags/arduino" class="list-group-item">arduino</a>
+      
+      <a href="https://vasmani.github.io/tags/hwp" class="list-group-item">hwp</a>
+      
+      <a href="https://vasmani.github.io/tags/liquidcrystal" class="list-group-item">liquidcrystal</a>
+      
+      <a href="https://vasmani.github.io/tags/pc%ED%86%B5%EC%8B%A0" class="list-group-item">pc통신</a>
+      
+      <a href="https://vasmani.github.io/tags/rgb-led" class="list-group-item">rgb-led</a>
+      
+      <a href="https://vasmani.github.io/tags/%EA%B8%B0%EB%A1%9D" class="list-group-item">기록</a>
+      
+      <a href="https://vasmani.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8" class="list-group-item">블로그</a>
+      
+      <a href="https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90" class="list-group-item">한메타자</a>
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Vasmani&#39;s Blog</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

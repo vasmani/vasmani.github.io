@@ -292,3 +292,7 @@ article.li.sm>header {
 .article-body img {
   max-width: 600px;
 }
+
+.article-body {
+  margin-bottom:100px;
+}

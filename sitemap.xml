@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vasmani.github.io/post/2017-02-07-raspberrypi-desktop/</loc>
+    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasmani.github.io/post/2017-02-06-nostalgia-9600bps/</loc>
     <lastmod>2017-02-06T11:01:38+09:00</lastmod>
   </url>
@@ -29,7 +34,13 @@
   
   <url>
     <loc>https://vasmani.github.io/tags/dosbox/</loc>
-    <lastmod>2017-02-06T11:01:38+09:00</lastmod>
+    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/hwp/</loc>
+    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -47,13 +58,13 @@
   
   <url>
     <loc>https://vasmani.github.io/post/</loc>
-    <lastmod>2017-02-06T11:01:38+09:00</lastmod>
+    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://vasmani.github.io/tags/raspberry-pi/</loc>
-    <lastmod>2017-02-06T11:01:38+09:00</lastmod>
+    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -70,7 +81,7 @@
   
   <url>
     <loc>https://vasmani.github.io/</loc>
-    <lastmod>2017-02-06T11:01:38+09:00</lastmod>
+    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -82,7 +93,7 @@
   
   <url>
     <loc>https://vasmani.github.io/categories/%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1/</loc>
-    <lastmod>2017-02-06T11:01:38+09:00</lastmod>
+    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -95,6 +106,12 @@
   <url>
     <loc>https://vasmani.github.io/categories/%EC%9D%BC%EC%83%81/</loc>
     <lastmod>2017-01-31T16:08:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90/</loc>
+    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
     <priority>0</priority>
   </url>
   
