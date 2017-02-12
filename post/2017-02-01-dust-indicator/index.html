@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <title>미세먼지 표시 &amp; 어항 피딩 머신 - Vasmani&#39;s Blog</title>
     
-<meta name="description" content="미세먼지 표시기 및 물주기 머신구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 실시간 미세먼지 수치는 airkorea에서 크롤링하여 보여 준다. 미세먼지 수치 크롤링은 아두이노에서 할 수 없으므로, 집 NAS로 사용하고 있는 Cubietruck에서 하고, 다른 곳에서 읽어갈 수 있게 해 놓았다. 이미 mpd 서버로 사용하고 있는 Raspberry Pi에서 cronjob을 통해 피딩 모터를 돌리라는 신호를 rf 315Mhz로 보내고 있으므로 이 머신에서 수치를 읽어 같은 방식으로 rf transmitter로 보낸다.">
+<meta name="description" content="구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 피딩 신호나 미세먼지 수치 신호는 다른 라즈베리파이에서 rf 315Mhz로 보내고 있으므로 이 머신에서는 메시지를 수신하여 1602 디스플레이에 표시한다. RGB LED를 달아 색깔로 미세먼지 수준을 알 수 있게 한다. 기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 좋은 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다.">
 
 <meta property="og:title" content="미세먼지 표시 &amp; 어항 피딩 머신 - Vasmani&#39;s Blog">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://vasmani.github.io/post/2017-02-01-dust-indicator/">
 <meta property="og:image" content="https://vasmani.github.io/images/default.png">
 <meta property="og:site_name" content="Vasmani&#39;s Blog">
-<meta property="og:description" content="미세먼지 표시기 및 물주기 머신구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 실시간 미세먼지 수치는 airkorea에서 크롤링하여 보여 준다. 미세먼지 수치 크롤링은 아두이노에서 할 수 없으므로, 집 NAS로 사용하고 있는 Cubietruck에서 하고, 다른 곳에서 읽어갈 수 있게 해 놓았다. 이미 mpd 서버로 사용하고 있는 Raspberry Pi에서 cronjob을 통해 피딩 모터를 돌리라는 신호를 rf 315Mhz로 보내고 있으므로 이 머신에서 수치를 읽어 같은 방식으로 rf transmitter로 보낸다.">
+<meta property="og:description" content="구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 피딩 신호나 미세먼지 수치 신호는 다른 라즈베리파이에서 rf 315Mhz로 보내고 있으므로 이 머신에서는 메시지를 수신하여 1602 디스플레이에 표시한다. RGB LED를 달아 색깔로 미세먼지 수준을 알 수 있게 한다. 기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 좋은 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다.">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Vasmani&#39;s Blog">
 <meta name="twitter:url" content="https://vasmani.github.io/post/2017-02-01-dust-indicator/">
 <meta name="twitter:title" content="미세먼지 표시 &amp; 어항 피딩 머신 - Vasmani&#39;s Blog">
-<meta name="twitter:description" content="미세먼지 표시기 및 물주기 머신구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 실시간 미세먼지 수치는 airkorea에서 크롤링하여 보여 준다. 미세먼지 수치 크롤링은 아두이노에서 할 수 없으므로, 집 NAS로 사용하고 있는 Cubietruck에서 하고, 다른 곳에서 읽어갈 수 있게 해 놓았다. 이미 mpd 서버로 사용하고 있는 Raspberry Pi에서 cronjob을 통해 피딩 모터를 돌리라는 신호를 rf 315Mhz로 보내고 있으므로 이 머신에서 수치를 읽어 같은 방식으로 rf transmitter로 보낸다.">
+<meta name="twitter:description" content="구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 피딩 신호나 미세먼지 수치 신호는 다른 라즈베리파이에서 rf 315Mhz로 보내고 있으므로 이 머신에서는 메시지를 수신하여 1602 디스플레이에 표시한다. RGB LED를 달아 색깔로 미세먼지 수준을 알 수 있게 한다. 기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 좋은 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다.">
 <meta name="twitter:image" content="https://vasmani.github.io/images/default.png">
 
 
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "미세먼지 표시기 및 물주기 머신\n구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 실시간 미세먼지 수치는 airkorea에서 크롤링하여 보여 준다. 미세먼지 수치 크롤링은 아두이노에서 할 수 없으므로, 집 NAS로 사용하고 있는 Cubietruck에서 하고, 다른 곳에서 읽어갈 수 있게 해 놓았다. 이미 mpd 서버로 사용하고 있는 Raspberry Pi에서 cronjob을 통해 피딩 모터를 돌리라는 신호를 rf 315Mhz로 보내고 있으므로 이 머신에서 수치를 읽어 같은 방식으로 rf transmitter로 보낸다."
+    "description": "구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 피딩 신호나 미세먼지 수치 신호는 다른 라즈베리파이에서 rf 315Mhz로 보내고 있으므로 이 머신에서는 메시지를 수신하여 1602 디스플레이에 표시한다. RGB LED를 달아 색깔로 미세먼지 수준을 알 수 있게 한다. 기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 좋은 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다."
   }
 </script>
 
@@ -138,17 +138,13 @@ ga('send', 'pageview');
 
   <div class="article-body">
 
-<p>미세먼지 표시기 및 물주기 머신</p>
-
 <h2 id="구상">구상</h2>
 
 <ul>
 <li>기존 만들었던 <a href="https://www.flickr.com/photos/98699716@N08/albums/72157653523812651">구피 자동 피딩 장치</a>(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다.</li>
-<li>실시간 미세먼지 수치는 <a href="http://m.airkorea.or.kr/">airkorea</a>에서 크롤링하여 보여 준다.</li>
-<li>미세먼지 수치 크롤링은 아두이노에서 할 수 없으므로, 집 NAS로 사용하고 있는 Cubietruck에서 하고, 다른 곳에서 읽어갈 수 있게 해 놓았다.</li>
-<li>이미 mpd 서버로 사용하고 있는 Raspberry Pi에서 cronjob을 통해 피딩 모터를 돌리라는 신호를 rf 315Mhz로 보내고 있으므로 이 머신에서 수치를 읽어 같은 방식으로 rf transmitter로 보낸다. 이를 아두이노에서는 읽어서 1602 디스플레이에 표시한다.</li>
-<li><a href="https://github.com/vasmani/blog/wiki/RGB-LED">RGB LED</a>를 달아 수치에 따라 색깔이 변하는 램프를 달아 둔다.</li>
-<li>기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 딱인 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다. 모터 쉴드도 <a href="https://github.com/vasmani/blog/wiki/L293D">L293D</a> IC로 대체한다.</li>
+<li>피딩 신호나 미세먼지 수치 신호는 다른 라즈베리파이에서 rf 315Mhz로 보내고 있으므로 이 머신에서는 메시지를 수신하여 1602 디스플레이에 표시한다.</li>
+<li><a href="https://github.com/vasmani/blog/wiki/RGB-LED">RGB LED</a>를 달아 색깔로 미세먼지 수준을 알 수 있게 한다.</li>
+<li>기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 좋은 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다. 모터 쉴드도 <a href="https://github.com/vasmani/blog/wiki/L293D">L293D</a> IC로 대체한다.</li>
 <li>미세먼지 수치는 15분마다 갱신된다.</li>
 </ul>
 
@@ -201,6 +197,10 @@ ga('send', 'pageview');
     
 </figure>
 
+
+<blockquote>
+<p>fritzing 어렵다&hellip;</p>
+</blockquote>
 </div>
 
   <footer class="article-footer">
