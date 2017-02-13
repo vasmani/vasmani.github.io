@@ -29,6 +29,7 @@
 &lt;li&gt;화면은 클 필요가 없다.마침 누가 버린&amp;hellip; &lt;em&gt;15인치 LCD모니터&lt;/em&gt; 가 있다.&lt;/li&gt;
 &lt;li&gt;마침 &lt;em&gt;블루투스 동글&lt;/em&gt; 과 &lt;a href=&#34;http://www.apple.com/kr/shop/product/MLA22KH/A/magic-keyboard-%ED%95%9C%EA%B5%AD%EC%96%B4?fnode=56&#34;&gt;블루투스 키보드&lt;/a&gt; 가 있다. 헛 이 키보드가 본체 가격보다 훨씬 비싸다는&amp;hellip; 근데 MS-DOS에 블루투스 키보드라니 좀 돼지 목에 진주&amp;hellip;. ㅋㅋ&lt;/li&gt;
 &lt;li&gt;집안을 뒤져보니 마침 12V와 5V가 동시에 나오는 충분한 용량의 어댑터가 하나 있다. 이게 왠 떡!&lt;/li&gt;
+&lt;li&gt;이 PC의 장점은 SD카드만 갈아 끼우면 &lt;a href=&#34;https://www.raspberrypi.org/blog/introducing-pixel/&#34;&gt;최신형 리눅스 데스크탑&lt;/a&gt;으로 변신한다는 점이다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;만들기&#34;&gt;만들기&lt;/h2&gt;
@@ -48,7 +49,7 @@
 
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31998673353/in/photostream/&#34; title=&#34;DSC05979&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2356/31998673353_f75a9dca65_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05979&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;라즈베리파이 케이스는 좀 별로지만, 모니터 뒷쪽에 붙일거라 나쁘지 않다. 배송되어 올때 케이스로 딸려 왔던(왜 이런걸&amp;hellip;) 핫핑크 플라스틱 케이스. 실용적인 케이스였으면 좋았으련만, 어쩔 수 없이 칼질을 해서 커넥터들의 구멍을 만들었다. 그래도 USB장비들과 스토리지인 SD카드를 쉽게 넣고 뺄수 있어서 사용성 면에선 최고다. SD카드만 바꾸면 최신 리눅스 데스크탑으로 변신!&lt;/p&gt;
+&lt;p&gt;라즈베리파이 케이스는 좀 별로지만, 모니터 뒷쪽에 붙일거라 나쁘지 않다. 배송되어 올때 케이스로 딸려 왔던(왜 이런걸&amp;hellip;) 핫핑크 플라스틱 케이스. 실용적인 케이스였으면 좋았으련만, 어쩔 수 없이 칼질을 해서 커넥터들의 구멍을 만들었다. 그래도 USB장비들과 스토리지인 SD카드를 쉽게 넣고 뺄수 있어서 사용성 면에선 최고다. SD카드만 바꾸면 &lt;a href=&#34;https://www.raspberrypi.org/blog/introducing-pixel/&#34;&gt;최신형 리눅스 데스크탑&lt;/a&gt;으로 변신!&lt;/p&gt;
 
 &lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32689612091/in/photostream/&#34; title=&#34;DSC05980&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2487/32689612091_e5ee47b9f7_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05980&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
@@ -127,107 +128,15 @@
 &lt;li&gt;Dosbox&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;[sdl]
-fullscreen=true
-fulldouble=false
-fullresolution=original
-windowresolution=original
-output=surface
-autolock=true
-sensitivity=100
-waitonerror=true
-priority=highest,normal
-mapperfile=mapper-0.74.map
-usescancodes=false
-
-[dosbox]
-language=
-machine=svga_s3
-captures=capture
-memsize=16
-
-[render]
-frameskip=2
-aspect=false
-scaler=none
-
-[cpu]
-core=auto
-cputype=386
-cycles=3000
-cycleup=10
-cycledown=10
-
-[mixer]
-nosound=false
-rate=8000
-blocksize=2048
-prebuffer=240
-
-[midi]
-mpu401=none
-mididevice=default
-midiconfig=
-
-[sblaster]
-sbtype=sb1
-sbbase=220
-irq=7
-dma=1
-hdma=5
-sbmixer=true
-oplmode=auto
-oplemu=default
-oplrate=22050
-
-[gus]
-gus=false
-gusrate=44100
-gusbase=240
-gusirq=5
-gusdma=3
-ultradir=C:\ULTRASND
-
-[speaker]
-pcspeaker=true
-pcrate=22050
-tandy=auto
-tandyrate=44100
-disney=true
-
-[joystick]
-joysticktype=none
-timed=true
-autofire=false
-swap34=false
-buttonwrap=false
-
-[modem]
+&lt;pre&gt;&lt;code&gt;[modem]
 modem=true
 comport=1
 listenport=23
 
-[serial]
 serial1=modem listenport:5000
 serial2=dummy
 serial3=disabled
 serial4=disabled
-
-[dos]
-xms=true
-ems=true
-umb=true
-keyboardlayout=auto
-
-[ipx]
-ipx=false
-
-[autoexec]
-@echo off
-set path=c:\mdir
-mount c /home/pi/dos
-c:
-m.exe
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;client&#34;&gt;Client&lt;/h2&gt;
@@ -238,7 +147,7 @@ m.exe
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code&gt;[serial]
-serial1=modem
+serial1=modem listenport 23
 serial2=dummy
 serial3=disabled
 serial4=disabled

@@ -33,107 +33,15 @@
 &lt;li&gt;Dosbox&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;[sdl]
-fullscreen=true
-fulldouble=false
-fullresolution=original
-windowresolution=original
-output=surface
-autolock=true
-sensitivity=100
-waitonerror=true
-priority=highest,normal
-mapperfile=mapper-0.74.map
-usescancodes=false
-
-[dosbox]
-language=
-machine=svga_s3
-captures=capture
-memsize=16
-
-[render]
-frameskip=2
-aspect=false
-scaler=none
-
-[cpu]
-core=auto
-cputype=386
-cycles=3000
-cycleup=10
-cycledown=10
-
-[mixer]
-nosound=false
-rate=8000
-blocksize=2048
-prebuffer=240
-
-[midi]
-mpu401=none
-mididevice=default
-midiconfig=
-
-[sblaster]
-sbtype=sb1
-sbbase=220
-irq=7
-dma=1
-hdma=5
-sbmixer=true
-oplmode=auto
-oplemu=default
-oplrate=22050
-
-[gus]
-gus=false
-gusrate=44100
-gusbase=240
-gusirq=5
-gusdma=3
-ultradir=C:\ULTRASND
-
-[speaker]
-pcspeaker=true
-pcrate=22050
-tandy=auto
-tandyrate=44100
-disney=true
-
-[joystick]
-joysticktype=none
-timed=true
-autofire=false
-swap34=false
-buttonwrap=false
-
-[modem]
+&lt;pre&gt;&lt;code&gt;[modem]
 modem=true
 comport=1
 listenport=23
 
-[serial]
 serial1=modem listenport:5000
 serial2=dummy
 serial3=disabled
 serial4=disabled
-
-[dos]
-xms=true
-ems=true
-umb=true
-keyboardlayout=auto
-
-[ipx]
-ipx=false
-
-[autoexec]
-@echo off
-set path=c:\mdir
-mount c /home/pi/dos
-c:
-m.exe
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;client&#34;&gt;Client&lt;/h2&gt;
@@ -144,7 +52,7 @@ m.exe
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code&gt;[serial]
-serial1=modem
+serial1=modem listenport 23
 serial2=dummy
 serial3=disabled
 serial4=disabled
