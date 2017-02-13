@@ -38,6 +38,7 @@ modem=true
 comport=1
 listenport=23
 
+[serial]
 serial1=modem listenport:5000
 serial2=dummy
 serial3=disabled
