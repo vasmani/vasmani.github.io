@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vasmani.github.io/post/2017-02-14-raspberrypi-zero/</loc>
+    <lastmod>2017-02-14T10:23:44+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasmani.github.io/post/2017-02-07-raspberrypi-desktop/</loc>
     <lastmod>2017-02-07T09:59:32+09:00</lastmod>
   </url>
@@ -58,13 +63,19 @@
   
   <url>
     <loc>https://vasmani.github.io/post/</loc>
-    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
+    <lastmod>2017-02-14T10:23:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://vasmani.github.io/tags/raspberry-pi/</loc>
-    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
+    <lastmod>2017-02-14T10:23:44+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/raspberry-pi-zero/</loc>
+    <lastmod>2017-02-14T10:23:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,7 +92,7 @@
   
   <url>
     <loc>https://vasmani.github.io/</loc>
-    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
+    <lastmod>2017-02-14T10:23:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,7 +104,7 @@
   
   <url>
     <loc>https://vasmani.github.io/categories/%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1/</loc>
-    <lastmod>2017-02-07T09:59:32+09:00</lastmod>
+    <lastmod>2017-02-14T10:23:44+09:00</lastmod>
     <priority>0</priority>
   </url>
   
