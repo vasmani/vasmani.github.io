@@ -41,61 +41,159 @@
 &lt;li&gt;라즈베리파이 on/off를 위한 스위치를 달자.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;모니터의 우하단 뒷쪽에 똑딱 스위치를 만들어 Raspberry Pi를 on/off 할 수 있다.&lt;/p&gt;
+&lt;p&gt;모니터의 우하단 뒷쪽에 &lt;em&gt;똑딱 스위치&lt;/em&gt; 를 만들어 Raspberry Pi를 on/off 할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31998672423/&#34; title=&#34;DSC05978&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2320/31998672423_7ab6482256_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05978&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;12V 전원을 쉽게 넣기 위해 전원선을 뽑았다. 모니터를 뜯어서 전원부에 납땜 했음.&lt;/p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2320/31998672423_7ab6482256_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31998673353/in/photostream/&#34; title=&#34;DSC05979&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2356/31998673353_f75a9dca65_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05979&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;12V 전원을 쉽게 넣기 위해 전원선을 뽑았다. 모니터를 뜯어서 전원부에 납땜 했음.  나사를 모두 풀러도 열리지 않아 고생했으나, 틈새에 헤라를 집어 넣어 여니까 뿌드득 소리가 나면서 열림-_-;&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2356/31998673353_f75a9dca65_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;라즈베리파이 케이스는 좀 별로지만, 모니터 뒷쪽에 붙일거라 나쁘지 않다. 배송되어 올때 케이스로 딸려 왔던(왜 이런걸&amp;hellip;) 핫핑크 플라스틱 케이스. 실용적인 케이스였으면 좋았으련만, 어쩔 수 없이 칼질을 해서 커넥터들의 구멍을 만들었다. 그래도 USB장비들과 스토리지인 SD카드를 쉽게 넣고 뺄수 있어서 사용성 면에선 최고다. SD카드만 바꾸면 &lt;a href=&#34;https://www.raspberrypi.org/blog/introducing-pixel/&#34;&gt;최신형 리눅스 데스크탑&lt;/a&gt;으로 변신!&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32689612091/in/photostream/&#34; title=&#34;DSC05980&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2487/32689612091_e5ee47b9f7_z.jpg&#34; width=&#34;640&#34; height=&#34;426&#34; alt=&#34;DSC05980&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2487/32689612091_e5ee47b9f7_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;뒤에 장착하기. 접착은 강력한 성능의 3M 양면테이프. Raspberry Pi는 HDMI 출력이라 VGA변환기 사용해야 한다. aliexpress에서 약 $3에 구입.&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31998675763/in/photostream/&#34; title=&#34;DSC05981&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2411/31998675763_241dffd7c2_z.jpg&#34; width=&#34;426&#34; height=&#34;640&#34; alt=&#34;DSC05981&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2411/31998675763_241dffd7c2_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;설치 완료.&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32706417681/&#34; title=&#34;DSC06004&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/456/32706417681_1669f24766_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06004&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/1/456/32706417681_1669f24766_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;뒷 부분은 좀 예쁘지는 않지만, 보이지 않는 부분이므로 패스. 근데 효린이 장난감 박스 색깔이랑 셋트 같네.&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/31987031574/in/photostream/&#34; title=&#34;DSC06007&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2755/31987031574_42c1a35eb6_c.jpg&#34; width=&#34;535&#34; height=&#34;800&#34; alt=&#34;DSC06007&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2755/31987031574_42c1a35eb6_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;부팅중&amp;hellip; 이 시간이 좀 짧으면 더 좋을 것 같다.&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32706423851/in/photostream/&#34; title=&#34;DSC06008&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2721/32706423851_d047cb40fe_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06008&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2721/32706423851_d047cb40fe_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;dosbox 자동 구동!&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32829961495/in/photostream/&#34; title=&#34;DSC06009&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/402/32829961495_8825dd2f0f_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06009&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/1/402/32829961495_8825dd2f0f_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;mdir 이라는 호사까지&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32015395253/in/photostream/&#34; title=&#34;DSC06010&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2812/32015395253_3fa356c545_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06010&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;한타 영타 마스터용 한메타자교사&lt;/p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2812/32015395253_3fa356c545_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32015399073/in/photostream/&#34; title=&#34;DSC06012&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/1/776/32015399073_62581ca0a1_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06012&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;한타 영타 마스터가 되는거야 한메타자교사&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/1/776/32015399073_62581ca0a1_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;전설의 게임 베네치아! 게임성 굿, 학습성 굿!&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32788891676/in/photostream/&#34; title=&#34;DSC06013&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/4/3818/32788891676_c544671773_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06013&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/4/3818/32788891676_c544671773_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;아래아한글 1.51 - 이것보다 더 낮은 버전은 아무리 뒤져도 못 찾았는다(없나?). 모든 기능을 키보드 단축기로 할 수 있어 겁나 빠르게 문서를 작성할 수 있다. 프린팅도 도전 예정.&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32015405623/in/photostream/&#34; title=&#34;DSC06014&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2799/32015405623_c68b02f454_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06014&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2799/32015405623_c68b02f454_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;이야기5.3으로 딸이랑 진솔한 채팅 하는 것도 로망중 하나. &lt;code&gt;방가&lt;/code&gt; &lt;code&gt;어솨요&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32676520532/in/photostream/&#34; title=&#34;DSC06015&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2741/32676520532_5e04d73a9a_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06015&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2741/32676520532_5e04d73a9a_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;p&gt;별누리 일기장. 이건 써보지는 못 했지만 일기쓰기용으로 아주 좋을 것 같다.&lt;/p&gt;
 
-&lt;p&gt;&lt;a data-flickr-embed=&#34;true&#34;  href=&#34;https://www.flickr.com/photos/98699716@N08/32788895606/in/photostream/&#34; title=&#34;DSC06016&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2727/32788895606_a6b27a5915_c.jpg&#34; width=&#34;800&#34; height=&#34;535&#34; alt=&#34;DSC06016&#34;&gt;&lt;/a&gt;&lt;script async src=&#34;//embedr.flickr.com/assets/client-code.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://c1.staticflickr.com/3/2727/32788895606_a6b27a5915_c.jpg&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
 
 &lt;h2 id=&#34;작동-영상&#34;&gt;작동 영상&lt;/h2&gt;
 
