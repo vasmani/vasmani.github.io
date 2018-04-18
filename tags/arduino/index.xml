@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arduino on Vasmani&#39;s Blog</title>
-    <link>https://vasmani.github.io/tags/arduino/index.xml</link>
+    <link>https://vasmani.github.io/tags/arduino/</link>
     <description>Recent content in Arduino on Vasmani&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <atom:link href="https://vasmani.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Feb 2017 17:29:14 +0900</lastBuildDate>
+    
+	<atom:link href="https://vasmani.github.io/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>미세먼지 표시 &amp; 어항 피딩 머신</title>
@@ -14,117 +17,7 @@
       <pubDate>Wed, 01 Feb 2017 17:29:14 +0900</pubDate>
       
       <guid>https://vasmani.github.io/post/2017-02-01-dust-indicator/</guid>
-      <description>
-
-&lt;h2 id=&#34;구상&#34;&gt;구상&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;기존 만들었던 &lt;a href=&#34;https://www.flickr.com/photos/98699716@N08/albums/72157653523812651&#34;&gt;구피 자동 피딩 장치&lt;/a&gt;(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다.&lt;/li&gt;
-&lt;li&gt;피딩 신호나 미세먼지 수치 신호는 다른 라즈베리파이에서 rf 315Mhz로 보내고 있으므로 이 머신에서는 메시지를 수신하여 1602 디스플레이에 표시한다.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/vasmani/blog/wiki/RGB-LED&#34;&gt;RGB LED&lt;/a&gt;를 달아 색깔로 미세먼지 수준을 알 수 있게 한다.&lt;/li&gt;
-&lt;li&gt;기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 좋은 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다. 모터 쉴드도 &lt;a href=&#34;https://github.com/vasmani/blog/wiki/L293D&#34;&gt;L293D&lt;/a&gt; IC로 대체한다.&lt;/li&gt;
-&lt;li&gt;미세먼지 수치는 15분마다 갱신된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;소스&#34;&gt;소스&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://bitbucket.org/ezhong/arduino/src/8b50a3ed4f428b10ef078e2680e3e596ee58b06d/fish-feed-motorshield/fish-feed-motorshield.ino?at=master&amp;amp;fileviewer=file-view-default&#34;&gt;bitbucket&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;기존&#34;&gt;기존&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Arduino Uno&lt;/li&gt;
-&lt;li&gt;DFRobot Motorshield&lt;/li&gt;
-&lt;li&gt;1602 I2C Display&lt;/li&gt;
-&lt;li&gt;RF 315Mhz Receiver&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;—&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://vasmani.github.io/images/32543033931_7868b3a061_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://vasmani.github.io/images/32512186912_1af829356f_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;h2 id=&#34;신규&#34;&gt;신규&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Arduino Pro Mini&lt;/li&gt;
-&lt;li&gt;L293D&lt;/li&gt;
-&lt;li&gt;RGB Led&lt;/li&gt;
-&lt;li&gt;RF 315Mhz Receiver&lt;/li&gt;
-&lt;li&gt;케이스는 효린이 장난감 껍데기&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/1/735/31852998653_8a10e99714_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/1/328/32665324865_05afa6b1ba_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/1/355/31822375744_9828a1b83c_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/1/269/32512214472_57c8464a04_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/1/451/31853020493_f04d955819_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;fritzing&#34;&gt;Fritzing&lt;/h2&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://vasmani.github.io/images/feeding_dust_display_bb.png&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;fritzing 어렵다&amp;hellip;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 피딩 신호나 미세먼지 수치 신호는 다른 라즈베리파이에서 rf 315Mhz로 보내고 있으므로 이 머신에서는 메시지를 수신하여 1602 디스플레이에 표시한다. RGB LED를 달아 색깔로 미세먼지 수준을 알 수 있게 한다. 기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 좋은 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다.</description>
     </item>
     
   </channel>

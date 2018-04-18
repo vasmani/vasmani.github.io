@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>한메타자 on Vasmani&#39;s Blog</title>
-    <link>https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90/index.xml</link>
+    <link>https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90/</link>
     <description>Recent content in 한메타자 on Vasmani&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <atom:link href="https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2017 09:59:32 +0900</lastBuildDate>
+    
+	<atom:link href="https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>효린이용 첫 PC 마련</title>
@@ -14,191 +17,8 @@
       <pubDate>Tue, 07 Feb 2017 09:59:32 +0900</pubDate>
       
       <guid>https://vasmani.github.io/post/2017-02-07-raspberrypi-desktop/</guid>
-      <description>
-
-&lt;h2 id=&#34;컴퓨터에-관심을-보이는-딸&#34;&gt;컴퓨터에 관심을 보이는 딸&lt;/h2&gt;
-
-&lt;p&gt;효린이가 한글을 터득하게 되면서, 키보드로 글쓰는 것에 호기심을 가지게 된 것 같다. 컴퓨터도 잘 활용하면 좋을 것 같아서 간단히 Raspberry Pi로 데스크탑을 만들어 주기로 했다.&lt;/p&gt;
-
-&lt;h2 id=&#34;구상&#34;&gt;구상&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;되도록이면 MS-DOS 환경으로 한다. 인터넷 연결도 없고, 자극적인 것도 없다. 인터넷은 위험해!&lt;/li&gt;
-&lt;li&gt;한메타자교사로 키보드 사용을 익히고, hwp로 문서를 작성해 보고, 이야기로 아빠랑 채팅도 해 볼 수 있다!&lt;/li&gt;
-&lt;li&gt;라즈베리파이는 마침 &lt;a href=&#34;https://www.raspberrypi.org/products/model-b/&#34;&gt;라즈베리파이1 Model B&lt;/a&gt;가 하나 놀고 있다.&lt;/li&gt;
-&lt;li&gt;화면은 클 필요가 없다.마침 누가 버린&amp;hellip; &lt;em&gt;15인치 LCD모니터&lt;/em&gt; 가 있다.&lt;/li&gt;
-&lt;li&gt;마침 &lt;em&gt;블루투스 동글&lt;/em&gt; 과 &lt;a href=&#34;http://www.apple.com/kr/shop/product/MLA22KH/A/magic-keyboard-%ED%95%9C%EA%B5%AD%EC%96%B4?fnode=56&#34;&gt;블루투스 키보드&lt;/a&gt; 가 있다. 헛 이 키보드가 본체 가격보다 훨씬 비싸다는&amp;hellip; 근데 MS-DOS에 블루투스 키보드라니 좀 돼지 목에 진주&amp;hellip;. ㅋㅋ&lt;/li&gt;
-&lt;li&gt;집안을 뒤져보니 마침 12V와 5V가 동시에 나오는 충분한 용량의 어댑터가 하나 있다. 이게 왠 떡!&lt;/li&gt;
-&lt;li&gt;이 PC의 장점은 SD카드만 갈아 끼우면 &lt;a href=&#34;https://www.raspberrypi.org/blog/introducing-pixel/&#34;&gt;최신형 리눅스 데스크탑&lt;/a&gt;으로 변신한다는 점이다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;만들기&#34;&gt;만들기&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Raspberry Pi&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.raspberrypi.org/downloads/raspbian/&#34;&gt;Raspbian&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.dosbox.com/&#34;&gt;DOSBox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;라즈베리파이 on/off를 위한 스위치를 달자.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;모니터의 우하단 뒷쪽에 &lt;em&gt;똑딱 스위치&lt;/em&gt; 를 만들어 Raspberry Pi를 on/off 할 수 있다.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2320/31998672423_7ab6482256_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;12V 전원을 쉽게 넣기 위해 전원선을 뽑았다. 모니터를 뜯어서 전원부에 납땜 했음.  나사를 모두 풀러도 열리지 않아 고생했으나, 틈새에 헤라를 집어 넣어 여니까 뿌드득 소리가 나면서 열림-_-;&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2356/31998673353_f75a9dca65_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;라즈베리파이 케이스는 좀 별로지만, 모니터 뒷쪽에 붙일거라 나쁘지 않다. 배송되어 올때 케이스로 딸려 왔던(왜 이런걸&amp;hellip;) 핫핑크 플라스틱 케이스. 실용적인 케이스였으면 좋았으련만, 어쩔 수 없이 칼질을 해서 커넥터들의 구멍을 만들었다. 그래도 USB장비들과 스토리지인 SD카드를 쉽게 넣고 뺄수 있어서 사용성 면에선 최고다. SD카드만 바꾸면 &lt;a href=&#34;https://www.raspberrypi.org/blog/introducing-pixel/&#34;&gt;최신형 리눅스 데스크탑&lt;/a&gt;으로 변신!&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2487/32689612091_e5ee47b9f7_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;뒤에 장착하기. 접착은 강력한 성능의 3M 양면테이프. Raspberry Pi는 HDMI 출력이라 VGA변환기 사용해야 한다. aliexpress에서 약 $3에 구입.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2411/31998675763_241dffd7c2_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;설치 완료.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/1/456/32706417681_1669f24766_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;뒷 부분은 좀 예쁘지는 않지만, 보이지 않는 부분이므로 패스. 근데 효린이 장난감 박스 색깔이랑 셋트 같네.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2755/31987031574_42c1a35eb6_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;부팅중&amp;hellip; 이 시간이 좀 짧으면 더 좋을 것 같다.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2721/32706423851_d047cb40fe_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;dosbox 자동 구동!&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/1/402/32829961495_8825dd2f0f_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;mdir 이라는 호사까지&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2812/32015395253_3fa356c545_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;한타 영타 마스터가 되는거야 한메타자교사&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/1/776/32015399073_62581ca0a1_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;전설의 게임 베네치아! 게임성 굿, 학습성 굿!&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/4/3818/32788891676_c544671773_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;아래아한글 1.51 - 이것보다 더 낮은 버전은 아무리 뒤져도 못 찾았는다(없나?). 모든 기능을 키보드 단축기로 할 수 있어 겁나 빠르게 문서를 작성할 수 있다. 프린팅도 도전 예정.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2799/32015405623_c68b02f454_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;이야기5.3으로 딸이랑 진솔한 채팅 하는 것도 로망중 하나. &lt;code&gt;방가&lt;/code&gt; &lt;code&gt;어솨요&lt;/code&gt;&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2741/32676520532_5e04d73a9a_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;별누리 일기장. 이건 써보지는 못 했지만 일기쓰기용으로 아주 좋을 것 같다.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://c1.staticflickr.com/3/2727/32788895606_a6b27a5915_c.jpg&#34; /&gt;
-    
-    
-&lt;/figure&gt;
-
-
-&lt;h2 id=&#34;작동-영상&#34;&gt;작동 영상&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;제작중...&lt;/code&gt;&lt;/p&gt;
-</description>
+      <description>컴퓨터에 관심을 보이는 딸 효린이가 한글을 터득하게 되면서, 키보드로 글쓰는 것에 호기심을 가지게 된 것 같다. 컴퓨터도 잘 활용하면 좋을 것 같아서 간단히 Raspberry Pi로 데스크탑을 만들어 주기로 했다.
+구상  되도록이면 MS-DOS 환경으로 한다. 인터넷 연결도 없고, 자극적인 것도 없다. 인터넷은 위험해! 한메타자교사로 키보드 사용을 익히고, hwp로 문서를 작성해 보고, 이야기로 아빠랑 채팅도 해 볼 수 있다! 라즈베리파이는 마침 라즈베리파이1 Model B가 하나 놀고 있다. 화면은 클 필요가 없다.</description>
     </item>
     
   </channel>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Vasmani&#39;s Blog</title>
+    <link>https://vasmani.github.io/categories/</link>
+    <description>Recent content in Categories on Vasmani&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    
+	<atom:link href="https://vasmani.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>뚝딱뚝딱</title>
+      <link>https://vasmani.github.io/categories/%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1/</link>
+      <pubDate>Tue, 14 Feb 2017 10:23:44 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/categories/%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>일상</title>
+      <link>https://vasmani.github.io/categories/%EC%9D%BC%EC%83%81/</link>
+      <pubDate>Tue, 31 Jan 2017 16:08:27 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/categories/%EC%9D%BC%EC%83%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>자동차</title>
+      <link>https://vasmani.github.io/categories/%EC%9E%90%EB%8F%99%EC%B0%A8/</link>
+      <pubDate>Wed, 18 Apr 2018 23:15:19 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/categories/%EC%9E%90%EB%8F%99%EC%B0%A8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>그랜저hg on Vasmani&#39;s Blog</title>
+    <link>https://vasmani.github.io/tags/%EA%B7%B8%EB%9E%9C%EC%A0%80hg/</link>
+    <description>Recent content in 그랜저hg on Vasmani&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 18 Apr 2018 23:15:19 +0900</lastBuildDate>
+    
+	<atom:link href="https://vasmani.github.io/tags/%EA%B7%B8%EB%9E%9C%EC%A0%80hg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HG330 자동차 배터리 교체</title>
+      <link>https://vasmani.github.io/post/2018-04-18-car-battery-change/</link>
+      <pubDate>Wed, 18 Apr 2018 23:15:19 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/post/2018-04-18-car-battery-change/</guid>
+      <description>2017년 4월, 중고로 차를 구매했고, 매일 회사 출근을 이 차로 하는 관계로 상시 블랙박스를 설치해 놓았었다. 매일 타니까 배터리 문제는 전혀 없었으나, 출장을 한 번 다녀 오니 배터리가 방전되어 있었다. 긴급출동으로 시동 걸고 다시 탔고, 그 후 1년 동안 별 문제는 없었다(상시 블박은 걍 탈 때만 작동 되는 걸로 전환).
+지난 주 토요일 까지 문제없이(게다가 시동도 시원하게 잘 걸리고) 잘 탔는데, 월요일에 타려고 하니 배터리 방전으로 시동 불능 상태였다. 긴급출동 또 한 번 호출로 시동 걸었고, 1시간 가량 운행해야 한다고 해서 떡 본 김에 제사 지낸다고, 에버랜드 호암미술관까지 시원하게 드라이브 하며 늦은 벚꽃을 조금 즐겼다.</description>
+    </item>
+    
+  </channel>
+</rss>

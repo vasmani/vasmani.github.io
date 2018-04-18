@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Vasmani&#39;s Blog</title>
+    <link>https://vasmani.github.io/tags/</link>
+    <description>Recent content in Tags on Vasmani&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 01 Feb 2017 17:29:14 +0900</lastBuildDate>
+    
+	<atom:link href="https://vasmani.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Arduino</title>
+      <link>https://vasmani.github.io/tags/arduino/</link>
+      <pubDate>Wed, 01 Feb 2017 17:29:14 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dosbox</title>
+      <link>https://vasmani.github.io/tags/dosbox/</link>
+      <pubDate>Tue, 07 Feb 2017 09:59:32 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/dosbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hg330</title>
+      <link>https://vasmani.github.io/tags/hg330/</link>
+      <pubDate>Wed, 18 Apr 2018 23:15:19 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/hg330/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hwp</title>
+      <link>https://vasmani.github.io/tags/hwp/</link>
+      <pubDate>Tue, 07 Feb 2017 09:59:32 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/hwp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Liquidcrystal</title>
+      <link>https://vasmani.github.io/tags/liquidcrystal/</link>
+      <pubDate>Wed, 01 Feb 2017 17:29:14 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/liquidcrystal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pc통신</title>
+      <link>https://vasmani.github.io/tags/pc%ED%86%B5%EC%8B%A0/</link>
+      <pubDate>Mon, 06 Feb 2017 11:01:38 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/pc%ED%86%B5%EC%8B%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://vasmani.github.io/tags/raspberry-pi/</link>
+      <pubDate>Tue, 14 Feb 2017 10:23:44 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Zero</title>
+      <link>https://vasmani.github.io/tags/raspberry-pi-zero/</link>
+      <pubDate>Tue, 14 Feb 2017 10:23:44 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/raspberry-pi-zero/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rgb Led</title>
+      <link>https://vasmani.github.io/tags/rgb-led/</link>
+      <pubDate>Wed, 01 Feb 2017 17:29:14 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/rgb-led/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>그랜저hg</title>
+      <link>https://vasmani.github.io/tags/%EA%B7%B8%EB%9E%9C%EC%A0%80hg/</link>
+      <pubDate>Wed, 18 Apr 2018 23:15:19 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/%EA%B7%B8%EB%9E%9C%EC%A0%80hg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>기록</title>
+      <link>https://vasmani.github.io/tags/%EA%B8%B0%EB%A1%9D/</link>
+      <pubDate>Tue, 31 Jan 2017 16:08:27 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/%EA%B8%B0%EB%A1%9D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>블로그</title>
+      <link>https://vasmani.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
+      <pubDate>Tue, 31 Jan 2017 16:08:27 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>자동차</title>
+      <link>https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</link>
+      <pubDate>Wed, 18 Apr 2018 23:15:19 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>한메타자</title>
+      <link>https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90/</link>
+      <pubDate>Tue, 07 Feb 2017 09:59:32 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/%ED%95%9C%EB%A9%94%ED%83%80%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
