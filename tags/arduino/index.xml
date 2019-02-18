@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Arduino on Vasmani&#39;s Blog</title>
+    <title>arduino on Vasmani&#39;s Blog</title>
     <link>https://vasmani.github.io/tags/arduino/</link>
-    <description>Recent content in Arduino on Vasmani&#39;s Blog</description>
+    <description>Recent content in arduino on Vasmani&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Wed, 01 Feb 2017 17:29:14 +0900</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Wed, 01 Feb 2017 17:29:14 +0900</pubDate>
       
       <guid>https://vasmani.github.io/post/2017-02-01-dust-indicator/</guid>
-      <description>구상  기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 피딩 신호나 미세먼지 수치 신호는 다른 라즈베리파이에서 rf 315Mhz로 보내고 있으므로 이 머신에서는 메시지를 수신하여 1602 디스플레이에 표시한다. RGB LED를 달아 색깔로 미세먼지 수준을 알 수 있게 한다. 기존에 사용중인 아두이노는 Uno에다 빵판, 모터쉴드를 모두 갖추고 있어 거대하기도 하고 테스트용으로 좋은 머신인데 이렇게 쓰기 아까우니까, Arduino Pro Mini로 대체한다.</description>
+      <description>구상 기존 만들었던 구피 자동 피딩 장치(이 링크에서는 Raspberry Pi로 구현했으나, 이후 버전은 Arduino로 했음)에 기능을 추가하여 미세먼지 수치를 보여준다. 피</description>
     </item>
     
   </channel>
