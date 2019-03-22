@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="https://vasmani.github.io/post/2018-04-18-car-battery-change/">
+<link rel="canonical" href="https://vasmani.github.io/post/2019-03-22-fixed-bricked-motherboard/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>자동차 배터리 자가 교체 - Vasmani&#39;s Blog</title>
+    <title>벽돌이 된 메인보드 라즈베리파이로 살리기 - Vasmani&#39;s Blog</title>
     
-<meta name="description" content="2017년 4월, 중고로 차를 구매했고, 매일 회사 출근을 이 차로 하는 관계로 상시 블랙박스를 설치해 놓았었다. 매일 타니까 배터리 문제는 전혀 없었으나, 출장을 한">
+<meta name="description" content="집에서 쓰는 PC가 너무 노후되어 그나마 덜 노후된 CPU를 어디서 구하게 되어 장착하고자 했다. 근데 BIOS에서 새 CPU를 인식하지 못할 수도 있다라는 글이 있어">
 
-<meta property="og:title" content="자동차 배터리 자가 교체 - Vasmani&#39;s Blog">
+<meta property="og:title" content="벽돌이 된 메인보드 라즈베리파이로 살리기 - Vasmani&#39;s Blog">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://vasmani.github.io/post/2018-04-18-car-battery-change/">
+<meta property="og:url" content="https://vasmani.github.io/post/2019-03-22-fixed-bricked-motherboard/">
 <meta property="og:image" content="https://vasmani.github.io/images/default.png">
 <meta property="og:site_name" content="Vasmani&#39;s Blog">
-<meta property="og:description" content="2017년 4월, 중고로 차를 구매했고, 매일 회사 출근을 이 차로 하는 관계로 상시 블랙박스를 설치해 놓았었다. 매일 타니까 배터리 문제는 전혀 없었으나, 출장을 한">
+<meta property="og:description" content="집에서 쓰는 PC가 너무 노후되어 그나마 덜 노후된 CPU를 어디서 구하게 되어 장착하고자 했다. 근데 BIOS에서 새 CPU를 인식하지 못할 수도 있다라는 글이 있어">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="Vasmani&#39;s Blog">
-<meta name="twitter:url" content="https://vasmani.github.io/post/2018-04-18-car-battery-change/">
-<meta name="twitter:title" content="자동차 배터리 자가 교체 - Vasmani&#39;s Blog">
-<meta name="twitter:description" content="2017년 4월, 중고로 차를 구매했고, 매일 회사 출근을 이 차로 하는 관계로 상시 블랙박스를 설치해 놓았었다. 매일 타니까 배터리 문제는 전혀 없었으나, 출장을 한">
+<meta name="twitter:url" content="https://vasmani.github.io/post/2019-03-22-fixed-bricked-motherboard/">
+<meta name="twitter:title" content="벽돌이 된 메인보드 라즈베리파이로 살리기 - Vasmani&#39;s Blog">
+<meta name="twitter:description" content="집에서 쓰는 PC가 너무 노후되어 그나마 덜 노후된 CPU를 어디서 구하게 되어 장착하고자 했다. 근데 BIOS에서 새 CPU를 인식하지 못할 수도 있다라는 글이 있어">
 <meta name="twitter:image" content="https://vasmani.github.io/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"https://vasmani.github.io/"
     },
-    "headline": "자동차 배터리 자가 교체 - Vasmani&#39;s Blog",
+    "headline": "벽돌이 된 메인보드 라즈베리파이로 살리기 - Vasmani&#39;s Blog",
     "image": {
       "@type": "ImageObject",
       "url": "https://vasmani.github.io/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-04-18T23:15:19JST",
-    "dateModified": "2018-04-18T23:15:19JST",
+    "datePublished": "2019-03-22T11:16:19JST",
+    "dateModified": "2019-03-22T11:16:19JST",
     "author": {
       "@type": "Person",
       "name": "Vasmani&#39;s Blog"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "2017년 4월, 중고로 차를 구매했고, 매일 회사 출근을 이 차로 하는 관계로 상시 블랙박스를 설치해 놓았었다. 매일 타니까 배터리 문제는 전혀 없었으나, 출장을 한"
+    "description": "집에서 쓰는 PC가 너무 노후되어 그나마 덜 노후된 CPU를 어디서 구하게 되어 장착하고자 했다. 근데 BIOS에서 새 CPU를 인식하지 못할 수도 있다라는 글이 있어"
   }
 </script>
 
@@ -122,157 +122,194 @@ if (!doNotTrack) {
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://vasmani.github.io/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
-        <li class="active">자동차 배터리 자가 교체</li>
+        <li class="active">벽돌이 된 메인보드 라즈베리파이로 살리기</li>
       </ol>
     </nav>
 
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-18T23:15:19JST">Apr 18, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2019-03-22T11:16:19JST">Mar 22, 2019</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://vasmani.github.io/post/">post</a></li>
       
     </ul>
 
-    <h1 class="title">자동차 배터리 자가 교체</h1>
+    <h1 class="title">벽돌이 된 메인보드 라즈베리파이로 살리기</h1>
   </header>
 
   
 
-  <div class="article-body"><p>2017년 4월, 중고로 차를 구매했고, 매일 회사 출근을 이 차로 하는 관계로 상시 블랙박스를 설치해 놓았었다. 매일 타니까 배터리 문제는 전혀 없었으나, 출장을 한 번 다녀 오니 배터리가 방전되어 있었다. 긴급출동으로 시동 걸고 다시 탔고, 그 후 1년 동안 별 문제는 없었다(상시 블박은 걍 탈 때만 작동 되는 걸로 전환).</p>
+  <div class="article-body">
 
-<p>지난 주 토요일 까지 문제없이(게다가 시동도 시원하게 잘 걸리고) 잘 탔는데, 월요일에 타려고 하니 배터리 방전으로 시동 불능 상태였다. 긴급출동 또 한 번 호출로 시동 걸었고, 1시간 가량 운행해야 한다고 해서 떡 본 김에 제사 지낸다고, 에버랜드 호암미술관까지 시원하게 드라이브 하며 늦은 벚꽃을 조금 즐겼다. 광교 이마트에서 쇼핑을 좀 하고 집에 오려고 시동을 거니 또 시동 불능. 또 긴급출동으로 시동, 집까지 와서 주차후 시동 테스트 해 보니 시동 불능. 완전 배터리가 맛이 간 것 같았다.</p>
+<p>집에서 쓰는 PC가 너무 노후되어 그나마 덜 노후된 CPU를 어디서 구하게 되어 장착하고자 했다. 근데 BIOS에서 새 CPU를 인식하지 못할 수도 있다라는 글이 있어 먼저 가뿐하게 BIOS를 업데이트 하고 CPU를 교체하려고 했다.</p>
 
-<p>급하게 11번가를 통해 순정과 동일한 델코 배터리 80A 짜리를 배송비 포함 6만 천원에 구매하였다. 교체 연장 대여 포함. 기존 배터리 반납 조건. 배터리 교체는 예전에 클릭 탈 때 해 봤었기에, 그게 얼마나 간단한 것인지 잘 알기에 바로 질렀다.</p>
+<p>대략 <a href="https://www.intechn.com/DataDetail/152/21">이곳</a>을 참조하여 점퍼스위치를 옮기고 USB에 MS-DOS를 플래시한 후, ROM파일을 넣고, 부팅하여 <code>update.bat</code>를 실행했다.</p>
 
-<p>드디어 배터리 도착. 옆부분 양쪽에 봉해진 테이프를 뜯어야 한다.</p>
+<p>뭔가 잘 플래시 되는 것 처럼 보이다가 뭔가 경고성 문구가 몇 개 뜨더니 퍽 자동으로 꺼져 버린다. 그리고 나서는 켜지지가 않는다. 켜면 3초 후에 다시 꺼지고, 켜지고를 반복한다. 화면엔 아무 것도 나오지 않는다. 아뿔싸. 한순간에 멍텅구리가 되어 버렸다.</p>
+
+<p>&hellip;</p>
+
+<p>이런 경우는 처음이라 좀 당황했다. 이 메인보드는 검색해도 정보도 별로 안나오는 싸구려 무명 메인보드였다. 역시 사람들이 많이 사용하는 제품을 쓰는게 언제나 옳다.</p>
 
 
 <figure>
     
-        <img src="/images/IMG_9827.jpg" />
+        <img src="/images/0322/Screen%20Shot%202019-03-22%20at%2011.37.18%20AM.png" />
     
     
 </figure>
 
 
-<p>배터리가 끊어지면 셋팅값들이 날아가고 ECU도 초기화 된다. 경우에 따라 엔진경고등도 뜨고 막 그런다고 하니, 그런 사태를 막기 위해 우선 새 배터리를 점프선으로 연결하여 시동을 걸어 둔다. 점프선을 연결하는 순서는 아래와 같다.</p>
-
-<ol>
-<li>+극을 연결</li>
-<li>-극을 연결</li>
-<li>시동</li>
-<li>-극을 제거</li>
-<li>+극을 제거</li>
-</ol>
+<p>근데 매뉴얼(해당 제품의 매뉴얼은 제공되지도 않아서 비슷한 제품의 매뉴얼)을 자세히 째려보니</p>
 
 
 <figure>
     
-        <img src="/images/IMG_9831.jpg" />
+        <img src="/images/0322/Screen%20Shot%202019-03-21%20at%201.22.57%20AM.png" />
     
     
 </figure>
 
 
-<p>시동이 걸리면 점프선을 제거 하고 본격 배터리 탈거에 들어간다. 거추장스러운 앞부분 통풍구부터 제거한다.</p>
+<p>왠지 어디선가 본 <code>SPI</code> <code>MOSI</code> <code>MISO</code> <code>CLK</code> 등의 문구가 보인다. 그렇다. 라즈베리파이나 아두이노에서 <code>SPI</code>통신을 했던 것이 기억이 났다. 그렇다면? 복구에 쓰이는 방식이 <code>SPI</code>라는 말인가?</p>
 
 
 <figure>
     
-        <img src="/images/IMG_9828.jpg" />
+        <img src="/images/0322/IMG_0690.JPG" />
     
     
 </figure>
 
 
-<p>시원하게 탈거 된 상태</p>
+<p><a href="https://www.datasheetq.com/datasheet-download/840460/1/Winbond/25Q64FVSIG">winbond 25Q64FVSIG</a> 라는 IC칩이 있고, 그 옆에 <code>ROM_RECOVERY</code>라고 적혀 있다(사실은 어설프게도 <code>ROM_REGOVERY</code>라고 적혀 있다). 그 옆에 핀들은 매뉴얼의 핀 모양과 같았다.</p>
+
+<p>검색해 보니 라즈베리파이로 이 IC에 플래시 하는 사례가 많이 있었다.</p>
+
+<p>바로 서랍 속에 간직해 둔 오래 된 <code>라즈베리파이 B+</code>을 꺼냈다. 제주에서 <a href="https://github.com/vasmani/space.2-timelapse-scripts">카카오 스페이스닷투 타임랩스</a> 찍을 때도 썼던 레전드!</p>
+
+<p>간만에 <code>raspbian-stretch-lite</code> 이미지를 다운로드 받아 SD카드에 굽고 셋팅을 하였다. <code>flashrom</code>이라는 프로그램을 통해 플래시가 가능했다.</p>
+
+<pre><code>git clone https://github.com/flashrom/flashrom.git
+cd flashrom
+make &amp;&amp; sudo make install
+</code></pre>
+
+<p>라즈베리파이와 메인보드의 <code>ROM_RECOVERY</code>핀들과 연결 할 차례다. 아래 이미지에서 <code>SPI</code>라고 된 부분들과 3.3V, GND 핀이 사용되었다.</p>
 
 
 <figure>
     
-        <img src="/images/IMG_9829.jpg" />
+        <img src="/images/0322/Screen%20Shot%202019-03-22%20at%2012.32.58%20PM.png" />
     
     
 </figure>
 
 
-<p>배터리를 자세히 보자.</p>
+<p><code>SPI</code>에서 사용되는 핀의 종류에는 이름이 좀 혼용되고 있는 것 같다. 예를 들면 <code>MOSI</code>는 <code>DI</code>로 표시되어 있는 곳도 있다. 그래서 아래 표를 참조했다.
+
+<figure>
+    
+        <img src="/images/0322/spi-names.PNG" />
+    
+    
+</figure>
+</p>
+
+<table>
+<thead>
+<tr>
+<th>RPi pin#</th>
+<th>SPI flash</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>25</td>
+<td>GND</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td>CS (CE0)</td>
+</tr>
+
+<tr>
+<td>23</td>
+<td>SCK (CLK)</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td>DO (MISO)</td>
+</tr>
+
+<tr>
+<td>19</td>
+<td>DI (MOSI)</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td>3.3V</td>
+</tr>
+</tbody>
+</table>
 
 
 <figure>
     
-        <img src="/images/IMG_9830.jpg" />
+        <img src="/images/0322/IMG_0693.JPG" />
     
     
 </figure>
 
 
-<p>우측은 -극, 좌측은 +극이다. -극은 차체이므로 +극과 닿지 않게만 하면 되지만, +극은 차체에 닿지 않게 조심해야 한다. 커버가 있어 쉽게 쇼트가 되지는 않는다. 이때 순서는</p>
+<p>다행히 GPIO 연장선인 <code>Pi Header</code>가 있어서 연결 자체는 어렵지 않았다.</p>
 
-<ol>
-<li>-극 탈거</li>
-<li>+극 탈거</li>
-<li>바보 배터리 들어 내기</li>
-<li>새 배터리 들어서(끙차) 넣어 자리 잡기</li>
-<li>+극 체결</li>
-<li>-극 체결</li>
-</ol>
+<p>연결후 라즈베리파이를 켜고, ssh를 통해 접속한 후 실제 flash 작업을 해 보았다.</p>
 
-<p>-, +극을 모두 탈거한 상태</p>
-
-
-<figure>
-    
-        <img src="/images/IMG_9832.jpg" />
-    
-    
-</figure>
-
-
-<p>이 상태에서 앞쪽에 클립으로 배터리를 고정하고 있는 볼트를 풀러내고 들어내면 된다. 꽤 무겁기 때문에 허리 조심!</p>
-
-
-<figure>
-    
-        <img src="/images/IMG_9833.jpg" />
-    
-    
-</figure>
-
-
-<p>새 배터리로 교체! 같은 델코 배터리인데 순정은 인디케이터 구멍조차 없다. 차 값이 얼만데, 현대차에서는 얼마에 공급받아 넣은 건지&hellip;
-이제 극 단자들을 언제나 그렇듯 역순으로 체결하면 된다.</p>
-
-
-<figure>
-    
-        <img src="/images/IMG_9834.jpg" />
-    
-    
-</figure>
-
-
-<p>그리고 깔끔하게 통풍구까지 마무리</p>
-
-
-<figure>
-    
-        <img src="/images/IMG_9835.jpg" />
-    
-    
-</figure>
-
-
-<p>근데 저 통풍구 입구가 저렇게 좁은데 공기가 제대로 들어가는지는 의문. 그냥 모양인가. 암튼 있던 것들은 그대로 두고.</p>
-
-<p>시동을 걸어보니 시원하게 잘~ 걸린다.</p>
+<pre><code>flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -w NORMAL.ROM
+</code></pre>
 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/NOB7FFiWAaQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="//www.youtube.com/embed/02hKkWWayvk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+
+<p>한참을 write하다가, verify까지 하더니 완료되었다.</p>
+
+
+<figure>
+    
+        <img src="/images/0322/IMG_0697.JPG" />
+    
+    
+</figure>
+
+
+<p>그리고 나서 <code>CMOS</code> 초기화를 위해 메인보드에 붙어 있는 동전 배터리를 탈거했다가 1분 후 다시 넣고, 전원을 넣어 보았다.</p>
+
+
+<figure>
+    
+        <img src="/images/0322/IMG_0698.JPG" />
+    
+    
+</figure>
+
+
+<p>오오 시~원하게 잘 된다! 괜한 삽질기 끝!</p>
+
+<h3 id="아주-고마웠던-링크들">아주 고마웠던 링크들</h3>
+
+<ul>
+<li><a href="http://www.ktman.pe.kr/RaspberryPi/59648">http://www.ktman.pe.kr/RaspberryPi/59648</a></li>
+<li><a href="https://www.flashrom.org/RaspberryPi">https://www.flashrom.org/RaspberryPi</a></li>
+<li><a href="https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/">https://tomvanveen.eu/flashing-bios-chip-raspberry-pi/</a></li>
+</ul>
 </div>
 
   <footer class="article-footer">
@@ -286,7 +323,7 @@ if (!doNotTrack) {
       <div>
         <ul class="p-terms">
           
-          <li><a href="https://vasmani.github.io/categories/%EC%9E%90%EB%8F%99%EC%B0%A8/">자동차</a></li>
+          <li><a href="https://vasmani.github.io/categories/%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1/">뚝딱뚝딱</a></li>
           
         </ul>
       </div>
@@ -301,11 +338,11 @@ if (!doNotTrack) {
       <div>
         <ul class="p-terms">
           
-          <li><a href="https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/">자동차</a></li>
+          <li><a href="https://vasmani.github.io/tags/raspberry-pi/">raspberry pi</a></li>
           
-          <li><a href="https://vasmani.github.io/tags/%EA%B7%B8%EB%9E%9C%EC%A0%80hg/">그랜저HG</a></li>
+          <li><a href="https://vasmani.github.io/tags/bios/">bios</a></li>
           
-          <li><a href="https://vasmani.github.io/tags/hg330/">HG330</a></li>
+          <li><a href="https://vasmani.github.io/tags/spi/">SPI</a></li>
           
         </ul>
       </div>
