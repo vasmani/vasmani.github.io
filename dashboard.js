@@ -34,8 +34,8 @@
         data.push({
           id: id,
           label: name,
-          key: key,
-          type: 'line', pointRadius: 0, fill: false, borderWidth: 2,          
+          key: key, 
+          type: 'line', pointRadius: 0, fill: false, borderWidth: 2, lineTension: 0.3,
           data: d.feeds.map(v => {
             return {t: moment(v.created_at).format('YYYY-MM-DD HH:mm'), y: parseFloat(v[key]) || 0}
           }),
