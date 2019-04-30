@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <style>
+        canvas {
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          margin:0 auto;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>awesome dashboard</h1>
+    <select id="results">
+      <option value="100">100</option>
+      <option value="200">200</option>
+      <option value="400">400</option>
+      <option value="1200">1200</option>
+    </select>
+    <div style="width:100%;">
+        <h2>내외부 기온</h2>
+        <canvas id="air_temperature" data-unit="'C"></canvas>
+        <h2>내외부 습도</h2>
+        <canvas id="air_humidity" data-unit="%"></canvas>
+        <h2>내부 CO2</h2>
+        <canvas id="air_co2" data-unit="ppm"></canvas>
+        <h2>미세먼지</h2>
+        <canvas id="air_pm" data-unit=""></canvas>
+        <h2>RPi CPU 온도</h2>
+        <canvas id="rpi_cpu" data-unit="'C"></canvas>
+        <h2>RPi LOAD</h2>
+        <canvas id="rpi_load" data-unit=""></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
