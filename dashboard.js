@@ -56,9 +56,12 @@
     canvases.forEach(c => {
       const ctx = c.getContext('2d');
       const datasets = data.filter(d => d.chart === c.id );
+      const span = c.previousElementSibling.querySelector('span');
+      const unit = c.dataset['unit'];
       datasets.forEach((d, i) => {
         d.borderColor = colors[i];
         d.backgroundColor = colors[i];
+        span.innerHTML += ` <span style="color:${colors[i]}">${d.data[d.data.length-1].y + unit}</span> `;
       });
       const cfg = {
         data: {
@@ -85,7 +88,7 @@
             yAxes: [{
               scaleLabel: {
                 display: true,
-                labelString: c.dataset['unit']
+                labelString: unit,
               }
             }]
           },
@@ -110,6 +113,7 @@
       ctx.canvas.width = 1000;
       ctx.canvas.height = 300;
       new Chart(ctx, cfg);
+      
     });
   }
 
