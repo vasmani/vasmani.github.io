@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vasmani.github.io/post/2019-08-27-bmw-i3-2017-rent/</loc>
+    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasmani.github.io/post/2019-03-22-fixed-bricked-motherboard/</loc>
     <lastmod>2019-03-22T11:16:19+09:00</lastmod>
   </url>
@@ -38,6 +43,12 @@
   </url>
   
   <url>
+    <loc>https://vasmani.github.io/tags/bmw-i3/</loc>
+    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://vasmani.github.io/categories/</loc>
     <priority>0</priority>
   </url>
@@ -56,7 +67,7 @@
   
   <url>
     <loc>https://vasmani.github.io/post/</loc>
-    <lastmod>2019-03-22T11:16:19+09:00</lastmod>
+    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -74,13 +85,13 @@
   
   <url>
     <loc>https://vasmani.github.io/tags/</loc>
-    <lastmod>2018-04-18T23:15:19+09:00</lastmod>
+    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://vasmani.github.io/</loc>
-    <lastmod>2019-03-22T11:16:19+09:00</lastmod>
+    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -157,14 +168,20 @@
   </url>
   
   <url>
-    <loc>https://vasmani.github.io/categories/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
-    <lastmod>2018-04-18T23:15:19+09:00</lastmod>
+    <loc>https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
+    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
-    <lastmod>2018-04-18T23:15:19+09:00</lastmod>
+    <loc>https://vasmani.github.io/categories/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
+    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/%EC%A0%84%EA%B8%B0%EC%B0%A8/</loc>
+    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   

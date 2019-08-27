@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Vasmani&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 18 Apr 2018 23:15:19 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 00:00:19 +0900</lastBuildDate>
     
 	<atom:link href="https://vasmani.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BMW i3</title>
+      <link>https://vasmani.github.io/tags/bmw-i3/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:19 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/bmw-i3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>HG330</title>
@@ -140,9 +149,18 @@
     <item>
       <title>자동차</title>
       <link>https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</link>
-      <pubDate>Wed, 18 Apr 2018 23:15:19 +0900</pubDate>
+      <pubDate>Tue, 27 Aug 2019 00:00:19 +0900</pubDate>
       
       <guid>https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>전기차</title>
+      <link>https://vasmani.github.io/tags/%EC%A0%84%EA%B8%B0%EC%B0%A8/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:19 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/tags/%EC%A0%84%EA%B8%B0%EC%B0%A8/</guid>
       <description></description>
     </item>
     

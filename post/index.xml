@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Vasmani&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 22 Mar 2019 11:16:19 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 00:00:19 +0900</lastBuildDate>
     
 	<atom:link href="https://vasmani.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2017년식 BMW i3 전기차 렌트기</title>
+      <link>https://vasmani.github.io/post/2019-08-27-bmw-i3-2017-rent/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:19 +0900</pubDate>
+      
+      <guid>https://vasmani.github.io/post/2019-08-27-bmw-i3-2017-rent/</guid>
+      <description>여차저차 하여 2박 3일 일정으로 제주로 가족 여행을 가게 되었다. 예전에 현대 아이오닉은 몇 번 렌트해서 타 봤고, 상당히 만족하였기에 이번에는 더 저렴하게 나온(!</description>
+    </item>
     
     <item>
       <title>벽돌이 된 메인보드 라즈베리파이로 살리기</title>
