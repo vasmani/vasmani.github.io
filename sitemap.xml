@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vasmani.github.io/post/2019-09-10-movie-hold-the-dark/</loc>
+    <lastmod>2019-09-10T00:00:19+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasmani.github.io/post/2019-08-27-bmw-i3-2017-rent/</loc>
     <lastmod>2019-08-27T00:00:19+09:00</lastmod>
   </url>
@@ -67,7 +72,7 @@
   
   <url>
     <loc>https://vasmani.github.io/post/</loc>
-    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
+    <lastmod>2019-09-10T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -91,7 +96,7 @@
   
   <url>
     <loc>https://vasmani.github.io/</loc>
-    <lastmod>2019-08-27T00:00:19+09:00</lastmod>
+    <lastmod>2019-09-10T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -162,19 +167,31 @@
   </url>
   
   <url>
+    <loc>https://vasmani.github.io/categories/%EC%98%81%ED%99%94/</loc>
+    <lastmod>2019-09-10T00:00:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://vasmani.github.io/tags/%EC%98%81%ED%99%94/</loc>
+    <lastmod>2019-09-10T00:00:19+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://vasmani.github.io/categories/%EC%9D%BC%EC%83%81/</loc>
     <lastmod>2017-01-31T16:08:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
+    <loc>https://vasmani.github.io/categories/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
     <lastmod>2019-08-27T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://vasmani.github.io/categories/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
+    <loc>https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
     <lastmod>2019-08-27T00:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
