@@ -11,7 +11,8 @@
     '우리집 외부기온': 'air_temperature',
     '우리집 외부습도': 'air_humidity',
     '우리집 외부PM10': 'air_pm',
-    '우리집 외부PM25': 'air_pm'
+    '우리집 외부PM25': 'air_pm',
+    '우리집 보일러온': 'heating'
   };
   const colors = ['red', 'navy', 'green', 'blue'];
 
