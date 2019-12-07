@@ -19,7 +19,7 @@
   const apis = [];
   for(let i=1; i< 9; i++){
     apis.push(`https://thingspeak.com/channels/759760/field/${i}.json?offset=0&results=${results}`);
-    if(i < 3){
+    if(i < 4){
       apis.push(`https://thingspeak.com/channels/766475/field/${i}.json?offset=0&results=${results}`);
     }
   }
