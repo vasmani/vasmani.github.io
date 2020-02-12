@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.49.2" />
+<meta name="generator" content="Hugo 0.60.1" />
 
 
 
@@ -40,12 +40,12 @@
     "@type": "NewsArticle",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id":"https://vasmani.github.io/"
+      "@id":"https:\/\/vasmani.github.io\/"
     },
-    "headline": "벽돌이 된 메인보드 라즈베리파이로 살리기 - Vasmani&#39;s Blog",
+    "headline": "벽돌이 된 메인보드 라즈베리파이로 살리기 - Vasmani\x27s Blog",
     "image": {
       "@type": "ImageObject",
-      "url": "https://vasmani.github.io/images/default.png",
+      "url": "https:\/\/vasmani.github.io\/images\/default.png",
       "height": 800,
       "width": 800
     },
@@ -53,14 +53,14 @@
     "dateModified": "2019-03-22T11:16:19JST",
     "author": {
       "@type": "Person",
-      "name": "Vasmani&#39;s Blog"
+      "name": "Vasmani\x27s Blog"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Vasmani&#39;s Blog",
+      "name": "Vasmani\x27s Blog",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://vasmani.github.io/images/logo.png",
+        "url": "https:\/\/vasmani.github.io\/images/logo.png",
         "width": 600,
         "height": 60
       }
@@ -139,83 +139,42 @@ if (!doNotTrack) {
 
   
 
-  <div class="article-body">
-
-<p>집에서 쓰는 PC가 너무 노후되어 그나마 덜 노후된 CPU를 어디서 구하게 되어 장착하고자 했다. 근데 BIOS에서 새 CPU를 인식하지 못할 수도 있다라는 글이 있어 먼저 가뿐하게 BIOS를 업데이트 하고 CPU를 교체하려고 했다.</p>
-
+  <div class="article-body"><p>집에서 쓰는 PC가 너무 노후되어 그나마 덜 노후된 CPU를 어디서 구하게 되어 장착하고자 했다. 근데 BIOS에서 새 CPU를 인식하지 못할 수도 있다라는 글이 있어 먼저 가뿐하게 BIOS를 업데이트 하고 CPU를 교체하려고 했다.</p>
 <p>대략 <a href="https://www.intechn.com/DataDetail/152/21">이곳</a>을 참조하여 점퍼스위치를 옮기고 USB에 MS-DOS를 플래시한 후, ROM파일을 넣고, 부팅하여 <code>update.bat</code>를 실행했다.</p>
-
 <p>뭔가 잘 플래시 되는 것 처럼 보이다가 뭔가 경고성 문구가 몇 개 뜨더니 퍽 자동으로 꺼져 버린다. 그리고 나서는 켜지지가 않는다. 켜면 3초 후에 다시 꺼지고, 켜지고를 반복한다. 화면엔 아무 것도 나오지 않는다. 아뿔싸. 한순간에 멍텅구리가 되어 버렸다.</p>
-
 <p>&hellip;</p>
-
 <p>이런 경우는 처음이라 좀 당황했다. 이 메인보드는 검색해도 정보도 별로 안나오는 싸구려 무명 메인보드였다. 역시 사람들이 많이 사용하는 제품을 쓰는게 언제나 옳다.</p>
-
-
 <figure>
-    
-        <img src="/images/0322/Screen%20Shot%202019-03-22%20at%2011.37.18%20AM.png" />
-    
-    
+    <img src="/images/0322/Screen%20Shot%202019-03-22%20at%2011.37.18%20AM.png"/> 
 </figure>
-
 
 <p>근데 매뉴얼(해당 제품의 매뉴얼은 제공되지도 않아서 비슷한 제품의 매뉴얼)을 자세히 째려보니</p>
-
-
 <figure>
-    
-        <img src="/images/0322/Screen%20Shot%202019-03-21%20at%201.22.57%20AM.png" />
-    
-    
+    <img src="/images/0322/Screen%20Shot%202019-03-21%20at%201.22.57%20AM.png"/> 
 </figure>
 
-
-<p>왠지 어디선가 본 <code>SPI</code> <code>MOSI</code> <code>MISO</code> <code>CLK</code> 등의 문구가 보인다. 그렇다. 라즈베리파이나 아두이노에서 <code>SPI</code>통신을 했던 것이 기억이 났다. 그렇다면? 복구에 쓰이는 방식이 <code>SPI</code>라는 말인가?</p>
-
-
+<p>왠지 어디선가 본 <code>SPI` </code>MOSI<code> </code>MISO<code> </code>CLK<code>등의 문구가 보인다. 그렇다. 라즈베리파이나 아두이노에서</code>SPI<code>통신을 했던 것이 기억이 났다. 그렇다면? 복구에 쓰이는 방식이 </code>SPI`라는 말인가?</p>
 <figure>
-    
-        <img src="/images/0322/IMG_0690.JPG" />
-    
-    
+    <img src="/images/0322/IMG_0690.JPG"/> 
 </figure>
-
 
 <p><a href="https://www.datasheetq.com/datasheet-download/840460/1/Winbond/25Q64FVSIG">winbond 25Q64FVSIG</a> 라는 IC칩이 있고, 그 옆에 <code>ROM_RECOVERY</code>라고 적혀 있다(사실은 어설프게도 <code>ROM_REGOVERY</code>라고 적혀 있다). 그 옆에 핀들은 매뉴얼의 핀 모양과 같았다.</p>
-
 <p>검색해 보니 라즈베리파이로 이 IC에 플래시 하는 사례가 많이 있었다.</p>
-
 <p>바로 서랍 속에 간직해 둔 오래 된 <code>라즈베리파이 B+</code>을 꺼냈다. 제주에서 <a href="https://github.com/vasmani/space.2-timelapse-scripts">카카오 스페이스닷투 타임랩스</a> 찍을 때도 썼던 레전드!</p>
-
 <p>간만에 <code>raspbian-stretch-lite</code> 이미지를 다운로드 받아 SD카드에 굽고 셋팅을 하였다. <code>flashrom</code>이라는 프로그램을 통해 플래시가 가능했다.</p>
-
 <pre><code>git clone https://github.com/flashrom/flashrom.git
 cd flashrom
 make &amp;&amp; sudo make install
-</code></pre>
-
-<p>라즈베리파이와 메인보드의 <code>ROM_RECOVERY</code>핀들과 연결 할 차례다. 아래 이미지에서 <code>SPI</code>라고 된 부분들과 3.3V, GND 핀이 사용되었다.</p>
-
-
+</code></pre><p>라즈베리파이와 메인보드의 <code>ROM_RECOVERY</code>핀들과 연결 할 차례다. 아래 이미지에서 <code>SPI</code>라고 된 부분들과 3.3V, GND 핀이 사용되었다.</p>
 <figure>
-    
-        <img src="/images/0322/Screen%20Shot%202019-03-22%20at%2012.32.58%20PM.png" />
-    
-    
+    <img src="/images/0322/Screen%20Shot%202019-03-22%20at%2012.32.58%20PM.png"/> 
 </figure>
-
 
 <p><code>SPI</code>에서 사용되는 핀의 종류에는 이름이 좀 혼용되고 있는 것 같다. 예를 들면 <code>MOSI</code>는 <code>DI</code>로 표시되어 있는 곳도 있다. 그래서 아래 표를 참조했다.
-
 <figure>
-    
-        <img src="/images/0322/spi-names.PNG" />
-    
-    
+    <img src="/images/0322/spi-names.PNG"/> 
 </figure>
 </p>
-
 <table>
 <thead>
 <tr>
@@ -223,88 +182,57 @@ make &amp;&amp; sudo make install
 <th>SPI flash</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>25</td>
 <td>GND</td>
 </tr>
-
 <tr>
 <td>24</td>
 <td>CS (CE0)</td>
 </tr>
-
 <tr>
 <td>23</td>
 <td>SCK (CLK)</td>
 </tr>
-
 <tr>
 <td>21</td>
 <td>DO (MISO)</td>
 </tr>
-
 <tr>
 <td>19</td>
 <td>DI (MOSI)</td>
 </tr>
-
 <tr>
 <td>17</td>
 <td>3.3V</td>
 </tr>
 </tbody>
 </table>
-
-
 <figure>
-    
-        <img src="/images/0322/IMG_0693.JPG" />
-    
-    
+    <img src="/images/0322/IMG_0693.JPG"/> 
 </figure>
-
 
 <p>다행히 GPIO 연장선인 <code>Pi Header</code>가 있어서 연결 자체는 어렵지 않았다.</p>
-
 <p>연결후 라즈베리파이를 켜고, ssh를 통해 접속한 후 실제 flash 작업을 해 보았다.</p>
-
 <pre><code>flashrom -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -w NORMAL.ROM
 </code></pre>
-
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/02hKkWWayvk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/02hKkWWayvk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-
 <p>한참을 write하다가, verify까지 하더니 완료되었다.</p>
-
-
 <figure>
-    
-        <img src="/images/0322/IMG_0697.JPG" />
-    
-    
+    <img src="/images/0322/IMG_0697.JPG"/> 
 </figure>
-
 
 <p>그리고 나서 <code>CMOS</code> 초기화를 위해 메인보드에 붙어 있는 동전 배터리를 탈거했다가 1분 후 다시 넣고, 전원을 넣어 보았다.</p>
-
-
 <figure>
-    
-        <img src="/images/0322/IMG_0698.JPG" />
-    
-    
+    <img src="/images/0322/IMG_0698.JPG"/> 
 </figure>
 
-
 <p>오오 시~원하게 잘 된다! 괜한 삽질기 끝!</p>
-
-<h3 id="아주-고마웠던-링크들">아주 고마웠던 링크들</h3>
-
+<h3 id="--">아주 고마웠던 링크들</h3>
 <ul>
 <li><a href="http://www.ktman.pe.kr/RaspberryPi/59648">http://www.ktman.pe.kr/RaspberryPi/59648</a></li>
 <li><a href="https://www.flashrom.org/RaspberryPi">https://www.flashrom.org/RaspberryPi</a></li>
@@ -386,25 +314,25 @@ make &amp;&amp; sudo make install
     </div>
     <div class="list-group">
       
+      <a href="https://vasmani.github.io/categories/" class="list-group-item">Categories</a>
+      
       <a href="https://vasmani.github.io/post/2019-09-10-movie-hold-the-dark/" class="list-group-item">Hold the Dark - 늑대의 어둠</a>
+      
+      <a href="https://vasmani.github.io/post/" class="list-group-item">Posts</a>
+      
+      <a href="https://vasmani.github.io/tags/" class="list-group-item">Tags</a>
+      
+      <a href="https://vasmani.github.io/" class="list-group-item">Vasmani&#39;s Blog</a>
+      
+      <a href="https://vasmani.github.io/categories/%EC%98%81%ED%99%94/" class="list-group-item">영화</a>
+      
+      <a href="https://vasmani.github.io/tags/%EC%98%81%ED%99%94/" class="list-group-item">영화</a>
       
       <a href="https://vasmani.github.io/post/2019-08-27-bmw-i3-2017-rent/" class="list-group-item">2017년식 BMW i3 전기차 렌트기</a>
       
-      <a href="https://vasmani.github.io/post/2019-03-22-fixed-bricked-motherboard/" class="list-group-item">벽돌이 된 메인보드 라즈베리파이로 살리기</a>
-      
-      <a href="https://vasmani.github.io/post/2018-04-18-car-battery-change/" class="list-group-item">자동차 배터리 자가 교체</a>
-      
-      <a href="https://vasmani.github.io/post/2017-02-14-raspberrypi-zero/" class="list-group-item">5천원 짜리 컴퓨터 라즈베리파이 제로</a>
-      
-      <a href="https://vasmani.github.io/post/2017-02-07-raspberrypi-desktop/" class="list-group-item">효린이용 첫 PC 마련</a>
-      
-      <a href="https://vasmani.github.io/post/2017-02-06-nostalgia-9600bps/" class="list-group-item">PC통신의 추억 - 곰주인 호스트 - 이야기5.3</a>
-      
-      <a href="https://vasmani.github.io/post/2017-02-01-dust-indicator/" class="list-group-item">미세먼지 표시 &amp; 어항 피딩 머신</a>
-      
-      <a href="https://vasmani.github.io/post/2017-01-31-blog-again-blog/" class="list-group-item">블로그를 다시 시작하다.</a>
-      
       <a href="https://vasmani.github.io/tags/bmw-i3/" class="list-group-item">BMW i3</a>
+      
+      <a href="https://vasmani.github.io/categories/%EC%9E%90%EB%8F%99%EC%B0%A8/" class="list-group-item">자동차</a>
       
     </div>
   </section>
@@ -433,25 +361,25 @@ make &amp;&amp; sudo make install
     </div>
     <div class="list-group">
       
-      <a href="https://vasmani.github.io/tags/raspberry-pi" class="list-group-item">raspberry pi</a>
+      <a href="https://vasmani.github.io/tags/raspberry-pi" class="list-group-item">raspberry-pi</a>
       
       <a href="https://vasmani.github.io/tags/dosbox" class="list-group-item">dosbox</a>
       
       <a href="https://vasmani.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8" class="list-group-item">자동차</a>
       
-      <a href="https://vasmani.github.io/tags/bmw-i3" class="list-group-item">BMW i3</a>
-      
-      <a href="https://vasmani.github.io/tags/hg330" class="list-group-item">HG330</a>
-      
-      <a href="https://vasmani.github.io/tags/liquidcrystal" class="list-group-item">LiquidCrystal</a>
-      
-      <a href="https://vasmani.github.io/tags/rgb-led" class="list-group-item">RGB LED</a>
-      
-      <a href="https://vasmani.github.io/tags/spi" class="list-group-item">SPI</a>
-      
       <a href="https://vasmani.github.io/tags/arduino" class="list-group-item">arduino</a>
       
       <a href="https://vasmani.github.io/tags/bios" class="list-group-item">bios</a>
+      
+      <a href="https://vasmani.github.io/tags/bmw-i3" class="list-group-item">bmw-i3</a>
+      
+      <a href="https://vasmani.github.io/tags/hg330" class="list-group-item">hg330</a>
+      
+      <a href="https://vasmani.github.io/tags/hwp" class="list-group-item">hwp</a>
+      
+      <a href="https://vasmani.github.io/tags/liquidcrystal" class="list-group-item">liquidcrystal</a>
+      
+      <a href="https://vasmani.github.io/tags/pc%ED%86%B5%EC%8B%A0" class="list-group-item">pc통신</a>
       
     </div>
   </section>
